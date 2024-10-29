@@ -1,0 +1,14 @@
+@media screen and (max-width: 1000px) {
+  .col-6 h1 {
+    font-size: 2rem;
+  }
+  .row2 {
+    font-size: 0.5em;
+  }
+}
+.banner-img {
+  max-width: 100%;
+  min-height: 95%;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 40%;
+}

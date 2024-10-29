@@ -1,0 +1,14 @@
+@media (min-width: 1000px) {
+  /* lg breakpoint */
+  button img {
+    width: 30px !important; /* Set to 20px on large screens */
+    height: 30px !important;
+  }
+}
+.nav-link {
+  color: white !important;
+}
+.nav-link:hover {
+  color: greenyellow !important;
+  font-weight: bold !important;
+}
