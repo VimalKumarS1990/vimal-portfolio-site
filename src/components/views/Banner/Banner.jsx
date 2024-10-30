@@ -5,7 +5,8 @@ import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   return (
-    <section className="container bg-light bg-gradient" id="#home">
+    <section className="container bg-light bg-gradient card py-5" id="home">
+      <div class="row"></div>
       <div className="row p-5 align-content-center justify-content-center">
         <div className="col-12 col-md-6 text-left align-content-center">
           <p
@@ -74,7 +75,6 @@ const Banner = () => {
           <img src={bannerImg1} alt="banner-img" className="banner-img" />
         </div>
       </div>
-      <hr />
     </section>
   );
 };

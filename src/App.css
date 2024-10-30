@@ -108,3 +108,22 @@ body {
   font-weight: 900;
   font-style: italic;
 }
+.card {
+  border-radius: 25px !important;
+}
+.navCard {
+  border-bottom-left-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+@font-face {
+  font-family: "Cookiemonster";
+  src: url("./assets/fonts/Cookiemonster.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.logo-font {
+  font-family: "Cookiemonster", sans-serif;
+  text-shadow: 2px 2px 2px black;
+}

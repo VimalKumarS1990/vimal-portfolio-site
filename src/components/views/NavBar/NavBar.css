@@ -4,11 +4,35 @@
     width: 30px !important; /* Set to 20px on large screens */
     height: 30px !important;
   }
+  .brand-logo {
+    width: 60px !important; /* Set to 20px on large screens */
+    height: auto !important;
+  }
 }
+.navbar {
+  height: auto !important;
+}
+@media screen and (min-width: 1000px) {
+  /* lg breakpoint */
+  .navbar {
+    height: 50px !important;
+  }
+}
+
 .nav-link {
   color: white !important;
 }
 .nav-link:hover {
   color: greenyellow !important;
   font-weight: bold !important;
+  text-shadow: 2px 2px 2px black;
+}
+.navbar-light .navbar-toggler {
+  border: none !important;
+}
+.marquee-container {
+  background-color: beige;
+  border-radius: 20px;
+  align-items: center;
+  color: brown;
 }
