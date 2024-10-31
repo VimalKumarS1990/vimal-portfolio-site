@@ -23,7 +23,7 @@ const NavBar = () => {
           borderBottom: "1px solid white",
         }}
       >
-        <div className="container align-items-baseline">
+        <div className="container-fluid align-items-baseline">
           <a
             href="#home"
             className="navbar-brand h1 active poppins-extrabold logo-font"

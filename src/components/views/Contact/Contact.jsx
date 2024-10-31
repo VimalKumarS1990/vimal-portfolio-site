@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="col m-auto">
           <h1
             className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold"
-            style={{ textShadow: "5px 2px 2px #EDDFE0", color: "#705C53" }}
+            style={{ textShadow: "5px 2px 2px #EDDFE0" }}
           >
             Contact
           </h1>
@@ -136,13 +136,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <br />
-      <p
-        className="row text-center p-5 m-auto justify-content-center"
-        style={{ fontSize: "12px", fontWeight: "600" }}
-      >
-        © Designed & Developed with ❤️ by Vimal Kumar
-      </p>
     </section>
   );
 };

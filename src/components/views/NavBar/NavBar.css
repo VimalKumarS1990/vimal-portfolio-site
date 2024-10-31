@@ -12,10 +12,16 @@
 .navbar {
   height: auto !important;
 }
+.nav-item {
+  border-top: 1px solid !important;
+}
 @media screen and (min-width: 1000px) {
   /* lg breakpoint */
   .navbar {
     height: 50px !important;
+  }
+  .nav-item {
+    border-top: none !important;
   }
 }
 

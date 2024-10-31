@@ -5,9 +5,18 @@
   .row2 {
     font-size: 0.5em;
   }
+  .row2 p {
+    font-size: x-large !important;
+  }
+  .typing {
+    font-size: large !important;
+  }
+  .display-3 {
+    font-size: 3.5em !important;
+  }
 }
 .banner-img {
-  max-width: 135%;
+  max-width: 110%;
   min-height: 95%;
   border-bottom-right-radius: 60%;
   border-bottom-left-radius: 40%;

@@ -1,0 +1,25 @@
+.url {
+  font-size: 1.5em !important;
+  color: blueviolet;
+  cursor: pointer;
+}
+.url:hover {
+  color: yellowgreen !important;
+}
+a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .url {
+    font-size: 1rem !important;
+    color: blueviolet;
+    cursor: pointer;
+  }
+  h3 {
+    font-size: 1rem !important;
+  }
+  .header {
+    font-size: 2rem !important;
+  }
+}
