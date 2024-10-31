@@ -20,12 +20,14 @@
 }
 
 .nav-link {
-  color: white !important;
+  color: #006a67 !important;
 }
 .nav-link:hover {
-  color: greenyellow !important;
+  color: maroon !important;
   font-weight: bold !important;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 5px 2px whitesmoke !important;
+  border: 2px solid #ccc !important;
+  border-radius: 10px !important;
 }
 .navbar-light .navbar-toggler {
   border: none !important;

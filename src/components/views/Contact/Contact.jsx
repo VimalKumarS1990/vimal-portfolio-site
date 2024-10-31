@@ -20,7 +20,10 @@ const Contact = () => {
     <section className="container col py-5" id="contact">
       <div className="row">
         <div className="col m-auto">
-          <h1 className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold">
+          <h1
+            className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold"
+            style={{ textShadow: "5px 2px 2px #EDDFE0", color: "#705C53" }}
+          >
             Contact
           </h1>
           <div class="row">
@@ -70,13 +73,7 @@ const Contact = () => {
                     <h3>
                       <FaMobileAlt className="text-secondary" /> Mobile: &nbsp;
                     </h3>
-                    <a
-                      href="https://wa.me/919791110494"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <h1 className="url">+91 9791110494</h1>
-                    </a>
+                    <h1 className="url">+91 9791110494</h1>
                   </div>
                 </div>
               </div>
@@ -139,6 +136,13 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <br />
+      <p
+        className="row text-center p-5 m-auto justify-content-center"
+        style={{ fontSize: "12px", fontWeight: "600" }}
+      >
+        © Designed & Developed with ❤️ by Vimal Kumar
+      </p>
     </section>
   );
 };

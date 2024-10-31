@@ -16,7 +16,10 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-light bg-info navbar-expand-lg row navCard mx-0 sticky-top">
+      <nav
+        className="navbar navbar-light navbar-expand-lg row navCard mx-0 sticky-top"
+        style={{ backgroundColor: "#99ff99" }}
+      >
         <div className="container align-items-baseline">
           <a
             href="#home"
@@ -36,7 +39,7 @@ const NavBar = () => {
             />
           </a>
           <span
-            style={{ fontWeight: "bold", color: "white" }}
+            style={{ fontWeight: "bold", color: "#006a67" }}
             className="d-block d-lg-none"
           >
             VIMAL PORTFOLIO
@@ -44,7 +47,7 @@ const NavBar = () => {
           <span>
             <a href="#resume" className="border-0 d-lg-none">
               <TbFileDownload
-                style={{ width: "40px", height: "40px", color: "white" }}
+                style={{ width: "40px", height: "40px", color: "#006a67" }}
               />
             </a>
             <button
@@ -58,7 +61,7 @@ const NavBar = () => {
                 style={{
                   width: "40px",
                   height: "40px",
-                  color: "white",
+                  color: "#006a67",
                 }}
               />
             </button>
@@ -104,7 +107,7 @@ const NavBar = () => {
           </div>
           <a href="#resume" className="border-0 d-none d-lg-block">
             <TbFileDownload
-              style={{ width: "40px", height: "40px", color: "white" }}
+              style={{ width: "40px", height: "40px", color: "#006a67" }}
               data-toggle="tooltip"
               title="Download Resume"
             />
