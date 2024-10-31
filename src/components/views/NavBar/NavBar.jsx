@@ -18,7 +18,10 @@ const NavBar = () => {
     <>
       <nav
         className="navbar navbar-light navbar-expand-lg row navCard mx-0 sticky-top"
-        style={{ backgroundColor: "#99ff99" }}
+        style={{
+          backgroundColor: "#C1E2A4",
+          borderBottom: "1px solid white",
+        }}
       >
         <div className="container align-items-baseline">
           <a
