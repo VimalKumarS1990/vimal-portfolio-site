@@ -10,7 +10,7 @@ const Banner = () => {
       id="home"
       style={{ backgroundColor: "#FFF6E3" }}
     >
-      <div class="row"></div>
+      <div className="row"></div>
       <div className="row p-5 align-content-center justify-content-center">
         <div className="col-12 col-md-6 text-left align-content-center">
           <p

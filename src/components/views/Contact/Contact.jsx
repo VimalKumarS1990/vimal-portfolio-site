@@ -4,20 +4,43 @@ import { SiGmail } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleValueFields = () => {
+    toast.warning(
+      "Please Enter Your Name and Mobile Number to View / Download Resume",
+      {
+        position: "bottom-right",
+      }
+    );
+  };
 
   const handleResumeDownload = (event) => {
     const resumePath = `https://drive.google.com/file/d/1Jzdk1mgM0IGdLkJNvQUEDanCzBJxnK7r/view?usp=sharing`;
 
     event.preventDefault();
-    window.open(resumePath, "_blank");
+    const nameIsValid = /^[A-Za-z\s]+$/.test(name);
+    const mobileIsValid = /^\d{10}$/.test(mobile);
+
+    console.log(nameIsValid);
+    console.log(mobileIsValid);
+
+    if (nameIsValid && mobileIsValid) {
+      window.open(resumePath, "_blank");
+    } else {
+      handleValueFields();
+    }
   };
 
   return (
     <section className="container col py-5" id="contact">
+      <ToastContainer />
       <div className="row">
         <div className="col m-auto">
           <h1
@@ -26,11 +49,11 @@ const Contact = () => {
           >
             Contact
           </h1>
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="row p-4 mt-4 card bg-light">
-                <div class="col-12 col-md-6">
-                  <div class="row p-1 align-items-baseline m-auto">
+          <div className="row">
+            <div className="col-12 col-md-6">
+              <div className="row p-4 mt-4 card bg-light">
+                <div className="col-12 col-md-6">
+                  <div className="row p-1 align-items-baseline m-auto">
                     <h3>
                       <SiGmail style={{ color: "red" }} /> Email: &nbsp;
                     </h3>
@@ -55,7 +78,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div className="col-12 col-md-6">
                   <div className="row p-1 align-items-baseline m-auto">
                     <h3>
                       <FaWhatsapp className="text-white bg-success rounded-circle" />{" "}
@@ -78,8 +101,8 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
-              <div class="row p-4 mt-4 card bg-light">
+            <div className="col-12 col-md-6">
+              <div className="row p-4 mt-4 card bg-light">
                 <form className="p-md-2 p-lg-4" id="resume">
                   <div className="form-group">
                     <label htmlFor="name">
@@ -89,23 +112,9 @@ const Contact = () => {
                       type="text"
                       className="form-control"
                       id="name"
-                      placeholder="Enter your name"
+                      placeholder="Please enter your name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="email">
-                      Email<span className="text-danger">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="email"
-                      placeholder="Enter your email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </div>
@@ -117,10 +126,21 @@ const Contact = () => {
                       type="tel"
                       className="form-control"
                       id="mobile"
-                      placeholder="Enter your mobile number"
+                      placeholder="Please enter your mobile number"
                       value={mobile}
                       onChange={(e) => setMobile(e.target.value)}
                       required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                   <button

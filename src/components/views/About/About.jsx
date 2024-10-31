@@ -10,7 +10,7 @@ const About = () => {
           >
             Contact
           </h1>
-          <div class="row"></div>
+          <div className="row"></div>
         </div>
       </div>
     </section>
