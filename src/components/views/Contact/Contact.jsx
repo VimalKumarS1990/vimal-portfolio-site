@@ -12,6 +12,12 @@ const Contact = () => {
   const [mobile, setMobile] = useState("");
   const [email, setEmail] = useState("");
 
+  const setDefault = () => {
+    setName("");
+    setMobile("");
+    setEmail("");
+  };
+
   const handleValueFields = () => {
     toast.warning(
       "Please Enter Your Name and Mobile Number to View / Download Resume",
@@ -28,11 +34,17 @@ const Contact = () => {
     const nameIsValid = /^[A-Za-z\s]+$/.test(name);
     const mobileIsValid = /^\d{10}$/.test(mobile);
 
-    console.log(nameIsValid);
-    console.log(mobileIsValid);
-
     if (nameIsValid && mobileIsValid) {
+      console.log([
+        {
+          Name: name,
+          Mobile: mobile,
+          Email: email,
+          Date: new Date().toLocaleString(),
+        },
+      ]);
       window.open(resumePath, "_blank");
+      setDefault();
     } else {
       handleValueFields();
     }
