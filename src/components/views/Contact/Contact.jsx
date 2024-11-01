@@ -6,6 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -18,9 +19,38 @@ const Contact = () => {
     setEmail("");
   };
 
+  const submitFormData = async () => {
+    const resumePath = `https://drive.google.com/file/d/1Jzdk1mgM0IGdLkJNvQUEDanCzBJxnK7r/view?usp=sharing`;
+    const currentDateTime = new Date().toLocaleString();
+
+    const userData = {
+      Name: name,
+      Mobile: mobile,
+      Email: email,
+      Downloaded_Date_Time: currentDateTime,
+    };
+
+    try {
+      const response = await axios.post(
+        "https://api.sheetbest.com/sheets/2a377bb6-f892-4051-aff9-2a0a7b2866c0",
+        userData
+      );
+      response.data &&
+        toast.success("Thanks for Downloading!", {
+          position: "bottom-right",
+        });
+      window.open(resumePath, "_blank");
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      toast.error("Sorry! Unable to Download!", {
+        position: "bottom-right",
+      });
+    }
+  };
+
   const handleValueFields = () => {
     toast.warning(
-      "Please Enter Your Name and Mobile Number to View / Download Resume",
+      "Please Enter Your Name, Mobile Number & Email to View / Download Resume",
       {
         position: "bottom-right",
       }
@@ -28,22 +58,12 @@ const Contact = () => {
   };
 
   const handleResumeDownload = (event) => {
-    const resumePath = `https://drive.google.com/file/d/1Jzdk1mgM0IGdLkJNvQUEDanCzBJxnK7r/view?usp=sharing`;
-
     event.preventDefault();
     const nameIsValid = /^[A-Za-z\s]+$/.test(name);
     const mobileIsValid = /^\d{10}$/.test(mobile);
 
     if (nameIsValid && mobileIsValid) {
-      console.log([
-        {
-          Name: name,
-          Mobile: mobile,
-          Email: email,
-          Date: new Date().toLocaleString(),
-        },
-      ]);
-      window.open(resumePath, "_blank");
+      submitFormData();
       setDefault();
     } else {
       handleValueFields();
@@ -150,7 +170,7 @@ const Contact = () => {
                       type="email"
                       className="form-control"
                       id="email"
-                      placeholder="Enter your email"
+                      placeholder="Please enter your email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
