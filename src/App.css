@@ -115,12 +115,13 @@ body {
   font-style: italic;
 }
 .card {
-  border-radius: 25px !important;
+  border-radius: 15px !important;
   background-color: #424769;
+  border: 10px solid rgba(0, 0, 0, 0.125);
 }
 .navCard {
-  border-bottom-left-radius: 25px !important;
-  border-bottom-right-radius: 25px !important;
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
 }
 @font-face {
   font-family: "Cookiemonster";
@@ -132,4 +133,42 @@ body {
   font-family: "Cookiemonster", sans-serif;
   text-shadow: 2px 2px 2px black;
 }
-/* custom */
+/* Card Glow Border */
+.glow {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #424769,
+      #112 50%,
+      #424769
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+  animation: bg-spin 3s linear infinite;
+}
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.glow:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}

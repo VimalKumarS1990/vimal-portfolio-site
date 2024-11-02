@@ -11,7 +11,7 @@ const Banner = () => {
       style={{ backgroundColor: "#F1EFDC" }}
     >
       <div className="row"></div>
-      <div className="row p-5 align-content-center justify-content-center">
+      <div className="row p-3 align-content-center justify-content-center">
         <div className="col-12 col-md-6 text-left align-content-center">
           <p
             className="display-3 row fw-bold poppins-semibold fs-20-lg justify-content-center text-center"

@@ -11,12 +11,12 @@ import axios from "axios";
 const Contact = () => {
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
-  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const setDefault = () => {
     setName("");
     setMobile("");
-    setEmail("");
+    setMessage("");
   };
 
   const submitFormData = async () => {
@@ -26,7 +26,7 @@ const Contact = () => {
     const userData = {
       Name: name,
       Mobile: mobile,
-      Email: email,
+      Message: message,
       Downloaded_Date_Time: currentDateTime,
     };
 
@@ -49,8 +49,8 @@ const Contact = () => {
   };
 
   const handleValueFields = () => {
-    toast.warning(
-      "Please Enter Your Name, Mobile Number & Email to View / Download Resume",
+    toast.error(
+      "Please Enter Your Name, Mobile Number & Message to View / Download Resume",
       {
         position: "bottom-right",
       }
@@ -82,11 +82,11 @@ const Contact = () => {
             Contact
           </h1>
           <div className="row">
-            <div className="col-12 col-md-6">
-              <div className="row p-4 mt-4 card text-white">
-                <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 ">
+              <div className="row p-2 mt-4 card text-white glow">
+                <div className="col-12 col-md-6 pt-3">
                   <div className="row p-1 align-items-baseline m-auto">
-                    <h3>
+                    <h3 style={{ fontSize: "1.5em" }}>
                       <SiGmail
                         style={{
                           color: "red",
@@ -105,7 +105,7 @@ const Contact = () => {
                     </a>
                   </div>
                   <div className="row p-1 align-items-baseline m-auto">
-                    <h3>
+                    <h3 style={{ fontSize: "1.5em" }}>
                       <BsLinkedin
                         className="text-primary"
                         style={{
@@ -124,9 +124,9 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-6 py-2 m-1">
                   <div className="row p-1 align-items-baseline m-auto">
-                    <h3>
+                    <h3 style={{ fontSize: "1.5em" }}>
                       <FaWhatsapp
                         className="text-white bg-success rounded-circle"
                         style={{
@@ -145,7 +145,7 @@ const Contact = () => {
                     </a>
                   </div>
                   <div className="row p-1 align-items-baseline m-auto">
-                    <h3>
+                    <h3 style={{ fontSize: "1.5em" }}>
                       <FaMobileAlt className="text-white" /> Mobile: &nbsp;
                     </h3>
                     <h1 className="url">+91 9791110494</h1>
@@ -154,8 +154,8 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-12 col-md-6">
-              <div className="row p-4 mt-4 card text-white">
-                <form className="p-md-2 p-lg-4" id="resume">
+              <div className="row p-3 mt-4 card text-white glow">
+                <form className="p-md-2 p-lg-3" id="resume">
                   <div className="form-group">
                     <label htmlFor="name">
                       Name<span className="text-danger">*</span>
@@ -185,14 +185,13 @@ const Contact = () => {
                     />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="email">Email</label>
-                    <input
-                      type="email"
+                    <label htmlFor="msg">Message</label>
+                    <textarea
                       className="form-control"
-                      id="email"
-                      placeholder="Please enter your email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      id="msg"
+                      placeholder="Please enter your message"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                     />
                   </div>
                   <button
