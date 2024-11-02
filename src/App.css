@@ -198,3 +198,6 @@ body {
   inherits: true;
   initial-value: 0turn;
 }
+section {
+  scroll-margin-top: 50px;
+}
