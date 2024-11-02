@@ -11,6 +11,7 @@
 }
 .navbar {
   height: auto !important;
+  opacity: 0.9 !important;
 }
 .nav-item {
   border-top: 1px solid !important;
