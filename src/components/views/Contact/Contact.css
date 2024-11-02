@@ -1,6 +1,6 @@
 .url {
   font-size: 1.5em !important;
-  color: rgb(131, 173, 228) !important;
+  color: rgb(205 216 229) !important;
   cursor: pointer;
 }
 .url:hover {
@@ -13,7 +13,7 @@ a:hover {
 @media screen and (max-width: 1000px) {
   .url {
     font-size: 1rem !important;
-    color: rgb(131, 173, 228) !important;
+    color: rgb(205 216 229) !important;
     cursor: pointer;
   }
   h3 {
@@ -22,4 +22,7 @@ a:hover {
   .header {
     font-size: 2rem !important;
   }
+}
+label {
+  font-weight: 600 !important;
 }

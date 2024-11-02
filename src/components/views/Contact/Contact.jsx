@@ -87,7 +87,14 @@ const Contact = () => {
                 <div className="col-12 col-md-6">
                   <div className="row p-1 align-items-baseline m-auto">
                     <h3>
-                      <SiGmail style={{ color: "red" }} /> Email: &nbsp;
+                      <SiGmail
+                        style={{
+                          color: "red",
+                          backgroundColor: "white",
+                          borderRadius: "10px 0px",
+                        }}
+                      />{" "}
+                      Email: &nbsp;
                     </h3>
                     <a
                       href="mailto:svimalkumar2@gmail.com"
@@ -99,7 +106,14 @@ const Contact = () => {
                   </div>
                   <div className="row p-1 align-items-baseline m-auto">
                     <h3>
-                      <BsLinkedin className="text-primary" /> LinkedIn: &nbsp;
+                      <BsLinkedin
+                        className="text-primary"
+                        style={{
+                          backgroundColor: "white",
+                          borderRadius: "10px 0px",
+                        }}
+                      />{" "}
+                      LinkedIn: &nbsp;
                     </h3>
                     <a
                       href="https://www.linkedin.com/messaging/compose/?recipientId=svimalkumar2"
@@ -113,7 +127,13 @@ const Contact = () => {
                 <div className="col-12 col-md-6">
                   <div className="row p-1 align-items-baseline m-auto">
                     <h3>
-                      <FaWhatsapp className="text-white bg-success rounded-circle" />{" "}
+                      <FaWhatsapp
+                        className="text-white bg-success rounded-circle"
+                        style={{
+                          backgroundColor: "white",
+                          borderRadius: "10px 0px",
+                        }}
+                      />{" "}
                       WhatsApp: &nbsp;
                     </h3>
                     <a
@@ -126,7 +146,7 @@ const Contact = () => {
                   </div>
                   <div className="row p-1 align-items-baseline m-auto">
                     <h3>
-                      <FaMobileAlt className="text-secondary" /> Mobile: &nbsp;
+                      <FaMobileAlt className="text-white" /> Mobile: &nbsp;
                     </h3>
                     <h1 className="url">+91 9791110494</h1>
                   </div>
@@ -179,6 +199,7 @@ const Contact = () => {
                     type="submit"
                     className="btn btn-primary"
                     onClick={handleResumeDownload}
+                    style={{ borderRadius: "15px" }}
                   >
                     View / Download Resume
                   </button>

@@ -55,7 +55,7 @@ const Banner = () => {
               style={{ height: "90px" }}
             >
               <TypeAnimation
-                className="typing"
+                className="typing poppins-black-slim"
                 sequence={[
                   "Who is specialized in React",
                   1000,
@@ -66,7 +66,8 @@ const Banner = () => {
                 speed={50}
                 style={{
                   color: "#5D0E41",
-                  fontSize: "2em",
+                  fontSize: "1.3em",
+                  fontWeight: "bold !important",
                   display: "inline-block",
                   textAlign: "center",
                 }}

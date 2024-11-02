@@ -55,6 +55,12 @@ body {
   font-style: normal;
 }
 
+.poppins-black-slim {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .poppins-thin-italic {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
