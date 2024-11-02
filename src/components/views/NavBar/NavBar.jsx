@@ -16,20 +16,13 @@ const NavBar = () => {
 
   return (
     <>
-      <nav
-        className="navbar navbar-light navbar-expand-lg row navCard mx-0 sticky-top"
-        style={{
-          backgroundColor: "#C1E2A4",
-          borderBottom: "1px solid white",
-        }}
-      >
+      <nav className="navbar navbar-light navbar-expand-lg row navCard mx-0 sticky-top">
         <div className="container-fluid align-items-baseline">
           <a
             href="#home"
             className="navbar-brand h1 active poppins-extrabold logo-font"
             style={{
               fontSize: "2rem",
-              color: "greenYellow",
             }}
             onClick={handleLinkClick}
           >
@@ -42,7 +35,7 @@ const NavBar = () => {
             />
           </a>
           <span
-            style={{ fontWeight: "bold", color: "#006a67" }}
+            style={{ fontWeight: "bold", color: "white" }}
             className="d-block d-lg-none"
           >
             VIMAL PORTFOLIO
@@ -50,7 +43,7 @@ const NavBar = () => {
           <span>
             <a href="#resume" className="border-0 d-lg-none">
               <TbFileDownload
-                style={{ width: "40px", height: "40px", color: "#006a67" }}
+                style={{ width: "40px", height: "40px", color: "white" }}
               />
             </a>
             <button
@@ -64,7 +57,7 @@ const NavBar = () => {
                 style={{
                   width: "40px",
                   height: "40px",
-                  color: "#006a67",
+                  color: "white",
                 }}
               />
             </button>
@@ -110,7 +103,7 @@ const NavBar = () => {
           </div>
           <a href="#resume" className="border-0 d-none d-lg-block">
             <TbFileDownload
-              style={{ width: "40px", height: "40px", color: "#006a67" }}
+              style={{ width: "40px", height: "40px", color: "white" }}
               data-toggle="tooltip"
               title="Download Resume"
             />

@@ -110,12 +110,11 @@ body {
 }
 .card {
   border-radius: 25px !important;
+  background-color: #424769;
 }
 .navCard {
   border-bottom-left-radius: 25px !important;
   border-bottom-right-radius: 25px !important;
-  border-top-left-radius: 8px !important;
-  border-top-right-radius: 8px !important;
 }
 @font-face {
   font-family: "Cookiemonster";
@@ -127,3 +126,4 @@ body {
   font-family: "Cookiemonster", sans-serif;
   text-shadow: 2px 2px 2px black;
 }
+/* custom */

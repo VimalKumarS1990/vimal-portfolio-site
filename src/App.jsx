@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./components/views/About/About";
 import Banner from "./components/views/Banner/Banner";
 import Contact from "./components/views/Contact/Contact";
 import NavBar from "./components/views/NavBar/NavBar";
@@ -9,6 +10,7 @@ function App() {
     <div className="container">
       <NavBar />
       <Banner />
+      <About />
       <Contact />
     </div>
   );

@@ -26,14 +26,18 @@
 }
 
 .nav-link {
-  color: #006a67 !important;
+  color: white !important;
 }
 .nav-link:hover {
-  color: maroon !important;
+  color: yellow !important;
   font-weight: bold !important;
-  text-shadow: 2px 5px 2px whitesmoke !important;
-  border: 2px solid #ccc !important;
-  border-radius: 10px !important;
+  text-shadow: 2px 2px 2px black !important;
+  transition: font-size 0.3s ease;
+  font-size: 1.1em;
+}
+svg:hover {
+  color: yellow !important;
+  text-shadow: 2px 2px 2px black !important;
 }
 .navbar-light .navbar-toggler {
   border: none !important;
@@ -43,4 +47,35 @@
   border-radius: 20px;
   align-items: center;
   color: brown;
+}
+/* custom */
+nav {
+  background-image: linear-gradient(
+    125deg,
+    #2c3e50,
+    #27ae60,
+    #2980b9,
+    #e74c3c,
+    #8e44ad
+  );
+  background-size: 400%;
+  animation: bganimation 15s infinite;
+}
+.text {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 350px 0;
+  font-size: 24px;
+}
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

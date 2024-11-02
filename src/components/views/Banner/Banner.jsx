@@ -8,7 +8,7 @@ const Banner = () => {
     <section
       className="container card py-5"
       id="home"
-      style={{ backgroundColor: "#FFF6E3" }}
+      style={{ backgroundColor: "#F1EFDC" }}
     >
       <div className="row"></div>
       <div className="row p-5 align-content-center justify-content-center">
@@ -76,7 +76,11 @@ const Banner = () => {
           </div>
         </div>
         <div className="col-12 col-md-6 text-center ">
-          <img src={bannerImg1} alt="banner-img" className="banner-img" />
+          <img
+            src={bannerImg1}
+            alt="banner-img"
+            className="banner-img img-fluid"
+          />
         </div>
       </div>
     </section>
