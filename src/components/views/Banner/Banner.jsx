@@ -76,7 +76,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 text-center ">
+        <div className="col-12 col-md-6 text-center">
           <img
             src={bannerImg1}
             alt="banner-img"

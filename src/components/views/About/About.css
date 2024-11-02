@@ -23,3 +23,13 @@ a:hover {
     font-size: 2rem !important;
   }
 }
+.about-img {
+  max-width: 100%;
+  min-height: 100%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  padding-bottom: 1em;
+}
+.sec-1 li {
+  margin-top: 5%;
+}

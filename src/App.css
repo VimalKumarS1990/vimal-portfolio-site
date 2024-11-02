@@ -140,7 +140,7 @@ body {
   background-image: conic-gradient(
       from var(--border-angle),
       #424769,
-      #112 50%,
+      #424769 100%,
       #424769
     ),
     conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
@@ -151,6 +151,29 @@ body {
   background-repeat: no-repeat;
   -webkit-animation: bg-spin 3s linear infinite;
   animation: bg-spin 3s linear infinite;
+}
+.glowBlack {
+  --border-size: 5px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgba(0, 0, 0, 0.7),
+      /* Semi-transparent black */ rgba(0, 0, 0, 0.7) 100%
+    ),
+    conic-gradient(
+      from var(--border-angle),
+      transparent 20%,
+      #08f,
+      /* Blue */ #f03 /* Red */
+    );
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+  animation: bg-spin 3s linear infinite;
+  padding: 1%;
 }
 @-webkit-keyframes bg-spin {
   to {
@@ -166,7 +189,10 @@ body {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
-
+.glowBlack:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
 @property --border-angle {
   syntax: "<angle>";
   inherits: true;

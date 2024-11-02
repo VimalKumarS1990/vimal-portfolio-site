@@ -81,7 +81,7 @@ const Contact = () => {
           >
             Contact
           </h1>
-          <div className="row">
+          <div className="row py-3 mt-3">
             <div className="col-12 col-md-6 ">
               <div className="row p-2 mt-4 card text-white glow">
                 <div className="col-12 col-md-6 pt-3">
