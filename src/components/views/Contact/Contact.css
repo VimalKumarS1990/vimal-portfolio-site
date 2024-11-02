@@ -9,7 +9,6 @@
 a:hover {
   text-decoration: none;
 }
-
 @media screen and (max-width: 1000px) {
   .url {
     font-size: 1rem !important;

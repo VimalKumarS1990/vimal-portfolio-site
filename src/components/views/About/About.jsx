@@ -1,7 +1,15 @@
 import "./About.css";
 import myPic from "../../../assets/images/about-img.png";
+import Chip from "../reusable/Chip/Chip";
 
 const About = () => {
+  const hobbies = [
+    "🎮 Video Games",
+    "🎵 Listening Music",
+    "💻⚙️ Fixing Gadgets",
+    "🎭 Watching Movies",
+  ];
+
   return (
     <section className="container-fluid col py-5" id="about">
       <div className="row">
@@ -13,15 +21,15 @@ const About = () => {
             About me
           </h1>
           <h1
-            className="row m-auto justify-content-center pt-4"
+            className="row m-auto justify-content-center pt-4 abt-header"
             style={{
               textShadow: "2px 2px 2px black",
-              lineHeight: "0.7",
               paddingBottom: "1rem",
               color: "#C4DAD2",
+              textAlign: "center",
             }}
           >
-            Passionate about &nbsp;
+            <span>Passionate about &nbsp;</span>
             <span style={{ color: "yellow" }}>Web Developer</span>
           </h1>
           <div
@@ -39,6 +47,15 @@ const About = () => {
                   fontSize: "0.80em",
                 }}
               >
+                <h4
+                  style={{
+                    textAlign: "center",
+                    color: "white",
+                    textShadow: "2px 2px 0px blue",
+                  }}
+                >
+                  Web Developer
+                </h4>
                 <ul style={{ listStyleType: "circle" }}>
                   <li>
                     Dedicated Frontend Developer with 4 years of experience in
@@ -80,32 +97,46 @@ const About = () => {
               style={{ borderRadius: "15px", border: "2px solid yellowgreen" }}
             >
               <div
-                className="p-4"
+                className="p-1"
                 style={{
                   borderRadius: "15px",
                   fontSize: "0.80em",
                   alignContent: "left",
+                  color: "#0D92F4",
                 }}
               >
-                <h4>My Hobbies:</h4>
-                <ul
-                  style={{ listStyleType: "none", paddingLeft: 0 }}
-                  className="pt-2"
+                <h4
+                  style={{
+                    color: "white",
+                    textShadow: "2px 2px 0px blue",
+                    textAlign: "center",
+                  }}
                 >
-                  <li style={{ fontSize: "1.2em", margin: "5px 0" }}>
-                    🎵 Listening Music
-                  </li>
-                  <li style={{ fontSize: "1.2em", margin: "5px 0" }}>
-                    🎮 Video Games
-                  </li>
-                  <li style={{ fontSize: "1.2em", margin: "5px 0" }}>
-                    💻⚙️ Fixing Gadgets
-                  </li>
-                  <li style={{ fontSize: "1.2em", margin: "5px 0" }}>
-                    🎭 Watching Movies
-                  </li>
-                </ul>
+                  My Hobbies
+                </h4>
+                <Chip content={hobbies} />
               </div>
+              <h4
+                style={{
+                  textAlign: "center",
+                  color: "white",
+                  textShadow: "2px 2px 0px blue",
+                }}
+              >
+                A Bit About Me
+              </h4>
+              <p className="mx-4" style={{ fontSize: "0.80em" }}>
+                I am a jovial person who enjoys working both in teams and
+                independently. With 14 years of experience across various tech
+                areas, including VBA and RPA, I have successfully transitioned
+                into web development—my ultimate goal. My journey began with
+                VBA, progressed to RPA, and has now led me to become a web
+                developer. I strive to create engaging and user-friendly
+                experiences. I enjoy tackling challenges and finding innovative
+                solutions, which keeps my work exciting and fulfilling. When I’m
+                not coding, I love to repair gadgets, indulging my curiosity and
+                technical skills.
+              </p>
             </div>
           </div>
         </div>
