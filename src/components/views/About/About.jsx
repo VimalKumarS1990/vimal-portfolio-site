@@ -94,49 +94,54 @@ const About = () => {
 
             <div
               className="col-12 col-md-4 sec-3 text-white bg-secondary glowBlack mb-2 py-4"
-              style={{ borderRadius: "15px", border: "2px solid yellowgreen" }}
+              style={{
+                borderRadius: "15px",
+                border: "2px solid yellowgreen",
+              }}
             >
-              <div
-                className="p-1"
-                style={{
-                  borderRadius: "15px",
-                  fontSize: "0.80em",
-                  alignContent: "left",
-                  color: "#0D92F4",
-                }}
-              >
+              <div className="pt-4">
                 <h4
                   style={{
+                    textAlign: "center",
                     color: "white",
                     textShadow: "2px 2px 0px blue",
-                    textAlign: "center",
                   }}
                 >
-                  My Hobbies
+                  A Bit About Me
                 </h4>
-                <Chip content={hobbies} />
+                <p className="mx-4" style={{ fontSize: "0.80em" }}>
+                  I am a jovial person who enjoys working both in teams and
+                  independently. With 14 years of experience across various tech
+                  areas, including VBA and RPA, I have successfully transitioned
+                  into web development—my ultimate goal. My journey began with
+                  VBA, progressed to RPA, and has now led me to become a web
+                  developer. I strive to create engaging and user-friendly
+                  experiences. I enjoy tackling challenges and finding
+                  innovative solutions, which keeps my work exciting and
+                  fulfilling. When I’m not coding, I love to repair gadgets,
+                  indulging my curiosity and technical skills.
+                </p>
+                <div
+                  className="p-1 pt-5"
+                  style={{
+                    borderRadius: "15px",
+                    fontSize: "0.80em",
+                    alignContent: "left",
+                    color: "#0D92F4",
+                  }}
+                >
+                  <h4
+                    style={{
+                      color: "white",
+                      textShadow: "2px 2px 0px blue",
+                      textAlign: "center",
+                    }}
+                  >
+                    My Hobbies
+                  </h4>
+                  <Chip content={hobbies} />
+                </div>
               </div>
-              <h4
-                style={{
-                  textAlign: "center",
-                  color: "white",
-                  textShadow: "2px 2px 0px blue",
-                }}
-              >
-                A Bit About Me
-              </h4>
-              <p className="mx-4" style={{ fontSize: "0.80em" }}>
-                I am a jovial person who enjoys working both in teams and
-                independently. With 14 years of experience across various tech
-                areas, including VBA and RPA, I have successfully transitioned
-                into web development—my ultimate goal. My journey began with
-                VBA, progressed to RPA, and has now led me to become a web
-                developer. I strive to create engaging and user-friendly
-                experiences. I enjoy tackling challenges and finding innovative
-                solutions, which keeps my work exciting and fulfilling. When I’m
-                not coding, I love to repair gadgets, indulging my curiosity and
-                technical skills.
-              </p>
             </div>
           </div>
         </div>

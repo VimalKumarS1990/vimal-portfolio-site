@@ -82,79 +82,93 @@ const Contact = () => {
             Contact
           </h1>
           <div className="row mt-3" style={{ justifyContent: "space-between" }}>
-            <div className="col-12 col-md-6">
-              <div className="row p-2 mt-4 card text-white glow">
-                <div className="col-12 col-md-6 pt-3">
-                  <div className="row p-1 align-items-baseline m-auto">
-                    <h3 style={{ fontSize: "1.5em" }}>
-                      <SiGmail
-                        style={{
-                          color: "red",
-                          backgroundColor: "white",
-                          borderRadius: "10px 0px",
-                        }}
-                      />{" "}
-                      Email: &nbsp;
-                    </h3>
-                    <a
-                      href="mailto:svimalkumar2@gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <h1 className="url">svimalkumar2@gmail.com</h1>
-                    </a>
-                  </div>
-                  <div className="row p-1 align-items-baseline m-auto">
-                    <h3 style={{ fontSize: "1.5em" }}>
-                      <BsLinkedin
-                        className="text-primary"
-                        style={{
-                          backgroundColor: "white",
-                          borderRadius: "10px 0px",
-                        }}
-                      />{" "}
-                      LinkedIn: &nbsp;
-                    </h3>
-                    <a
-                      href="https://www.linkedin.com/messaging/compose/?recipientId=svimalkumar2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <h1 className="url">svimalkumar2</h1>
-                    </a>
-                  </div>
+            <div className="col-12 col-md-6 sec-1">
+              <div
+                className="p-1 mt-4 card text-white glow"
+                style={{ height: "100%" }}
+              >
+                <div
+                  className="contact-item"
+                  style={{ display: "flex", justifyContent: "left" }}
+                >
+                  <h3 style={{ fontSize: "1.5em" }}>
+                    <SiGmail
+                      style={{
+                        color: "red",
+                        backgroundColor: "white",
+                        borderRadius: "10px 0px",
+                      }}
+                    />{" "}
+                    Email: &nbsp;
+                  </h3>
+                  <a
+                    href="mailto:svimalkumar2@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h1 className="url">svimalkumar2@gmail.com</h1>
+                  </a>
                 </div>
-                <div className="col-12 col-md-6 py-2 m-1">
-                  <div className="row p-1 align-items-baseline m-auto">
-                    <h3 style={{ fontSize: "1.5em" }}>
-                      <FaWhatsapp
-                        className="text-white bg-success rounded-circle"
-                        style={{
-                          backgroundColor: "white",
-                          borderRadius: "10px 0px",
-                        }}
-                      />{" "}
-                      WhatsApp: &nbsp;
-                    </h3>
-                    <a
-                      href="https://wa.me/919791110494"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <h1 className="url">+91 9791110494</h1>
-                    </a>
-                  </div>
-                  <div className="row p-1 align-items-baseline m-auto">
-                    <h3 style={{ fontSize: "1.5em" }}>
-                      <FaMobileAlt className="text-white" /> Mobile: &nbsp;
-                    </h3>
+                <div
+                  className="contact-item"
+                  style={{ display: "flex", justifyContent: "left" }}
+                >
+                  <h3 style={{ fontSize: "1.5em" }}>
+                    <BsLinkedin
+                      className="text-primary"
+                      style={{
+                        backgroundColor: "white",
+                        borderRadius: "10px 0px",
+                      }}
+                    />{" "}
+                    LinkedIn: &nbsp;
+                  </h3>
+                  <a
+                    href="https://www.linkedin.com/messaging/compose/?recipientId=svimalkumar2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h1 className="url">svimalkumar2</h1>
+                  </a>
+                </div>
+                <div
+                  className="contact-item"
+                  style={{ display: "flex", justifyContent: "left" }}
+                >
+                  <h3 style={{ fontSize: "1.5em" }}>
+                    <FaWhatsapp
+                      className="text-white bg-success rounded-circle"
+                      style={{
+                        backgroundColor: "white",
+                        borderRadius: "10px 0px",
+                      }}
+                    />{" "}
+                    WhatsApp: &nbsp;
+                  </h3>
+                  <a
+                    href="https://wa.me/919791110494"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <h1 className="url">+91 9791110494</h1>
-                  </div>
+                  </a>
+                </div>
+                <div
+                  className="contact-item"
+                  style={{ display: "flex", justifyContent: "left" }}
+                >
+                  <h3 style={{ fontSize: "1.5em" }}>
+                    <FaMobileAlt className="text-white" /> Mobile: &nbsp;
+                  </h3>
+                  <h1 className="url">+91 9791110494</h1>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6">
-              <div className="row p-3 mt-4 card text-white glow">
+            <div className="col-12 col-md-6 sec-2">
+              <div
+                className="p-1 mt-4 card text-white glow"
+                style={{ height: "100%" }}
+              >
                 <form className="p-md-2 p-lg-3" id="resume">
                   <div className="form-group">
                     <label htmlFor="name">
