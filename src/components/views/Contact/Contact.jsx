@@ -79,7 +79,7 @@ const Contact = () => {
             className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold"
             style={{ textShadow: "5px 3px 2px black", color: "white" }}
           >
-            Contact
+            CONTACT
           </h1>
           <div className="row mt-3" style={{ justifyContent: "space-between" }}>
             <div className="col-12 col-md-6 sec-1">

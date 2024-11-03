@@ -1,16 +1,25 @@
 import "./App.css";
-import About from "./components/views/About/About";
-import Banner from "./components/views/Banner/Banner";
-import Contact from "./components/views/Contact/Contact";
-import NavBar from "./components/views/NavBar/NavBar";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import NavBar from "./components/views/NavBar/NavBar";
+import Banner from "./components/views/Banner/Banner";
+import About from "./components/views/About/About";
+import Skills from "./components/views/Skills/Skills";
+import Contact from "./components/views/Contact/Contact";
 
 function App() {
+  const scrollToSection = (section) => {
+    const sectionName = document.getElementById(section);
+    if (sectionName) {
+      sectionName.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="container">
       <NavBar />
       <Banner />
-      <About />
+      <About scrollToSection={scrollToSection} />
+      <Skills />
       <Contact />
     </div>
   );

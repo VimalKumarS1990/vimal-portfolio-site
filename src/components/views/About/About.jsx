@@ -2,7 +2,7 @@ import "./About.css";
 import myPic from "../../../assets/images/about-img.png";
 import Chip from "../reusable/Chip/Chip";
 
-const About = () => {
+const About = ({ scrollToSection }) => {
   const hobbies = [
     "🎮 Video Games",
     "🎵 Listening Music",
@@ -18,9 +18,9 @@ const About = () => {
             className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold"
             style={{ textShadow: "5px 3px 2px black", color: "white" }}
           >
-            About me
+            ABOUT
           </h1>
-          <h1
+          <h2
             className="row m-auto justify-content-center pt-4 abt-header"
             style={{
               textShadow: "2px 2px 2px black",
@@ -31,13 +31,13 @@ const About = () => {
           >
             <span>Passionate about &nbsp;</span>
             <span style={{ color: "yellow" }}>Web Developer</span>
-          </h1>
+          </h2>
           <div
             className="row py-4 mt-3 m-auto"
             style={{ borderRadius: "15px" }}
           >
             <div
-              className="col-12 col-md-4 sec-1 text-white bg-secondary glowBlack mb-2 py-4"
+              className="col-12 col-md-4 sec-1 text-white bg-secondary card glowBlack mb-2 py-4"
               style={{ borderRadius: "15px", border: "2px solid yellowgreen" }}
             >
               <div
@@ -82,6 +82,19 @@ const About = () => {
                   </li>
                 </ul>
               </div>
+
+              <button
+                type="button"
+                className="btn btn-primary text-white>Download"
+                style={{
+                  maxWidth: "8rem",
+                  margin: "auto",
+                  borderRadius: "25px",
+                }}
+                onClick={() => scrollToSection("contact")}
+              >
+                My Resume
+              </button>
             </div>
 
             <div className="col-12 col-md-4 sec-2 mb-2 py-2">
@@ -93,7 +106,7 @@ const About = () => {
             </div>
 
             <div
-              className="col-12 col-md-4 sec-3 text-white bg-secondary glowBlack mb-2 py-4"
+              className="col-12 col-md-4 sec-3 text-white bg-secondary card glowBlack mb-2 py-4"
               style={{
                 borderRadius: "15px",
                 border: "2px solid yellowgreen",
