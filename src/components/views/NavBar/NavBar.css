@@ -42,6 +42,7 @@ svg:hover {
 }
 .navbar-light .navbar-toggler {
   border: none !important;
+  outline: none !important;
 }
 .marquee-container {
   background-color: beige;

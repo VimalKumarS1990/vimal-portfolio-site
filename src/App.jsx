@@ -5,6 +5,8 @@ import Banner from "./components/views/Banner/Banner";
 import About from "./components/views/About/About";
 import Skills from "./components/views/Skills/Skills";
 import Contact from "./components/views/Contact/Contact";
+import ScrollToTop from "react-scroll-to-top";
+import { FaChevronCircleUp } from "react-icons/fa";
 
 function App() {
   const scrollToSection = (section) => {
@@ -16,6 +18,14 @@ function App() {
 
   return (
     <div className="container">
+      <ScrollToTop
+        smooth
+        component={
+          <FaChevronCircleUp
+            style={{ color: "yellowgreen", fontSize: "2em" }}
+          />
+        }
+      />
       <NavBar />
       <Banner />
       <About scrollToSection={scrollToSection} />
