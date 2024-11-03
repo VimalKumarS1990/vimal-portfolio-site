@@ -97,6 +97,18 @@ const Skills = () => {
       logo: "hardware_logo",
     },
   ];
+  const certificates = [
+    {
+      name: "Microsoft Azure AZ900 - Certified ",
+      logo: "az900_logo",
+      size: "30px",
+    },
+    {
+      name: "BluePrism Developer - Certified ",
+      logo: "rpa_logo",
+      size: "30px",
+    },
+  ];
   return (
     <section className="container-fluid col py-5" id="skills">
       <div className="row">
@@ -140,7 +152,7 @@ const Skills = () => {
                 textAlign: "center",
               }}
             >
-              Other Skills
+              Other Technical Skills & Certifications
             </h2>
             <div className="col-12 col-md-6">
               <img src={posterOther} alt="skills-other" className="img-fluid" />
@@ -149,7 +161,16 @@ const Skills = () => {
               <div className="card glow">
                 <div className="card-body">
                   <div class="row mx-3 p-3">
-                    <Pill pillData={otherSkills} />
+                    <p style={{ color: "#C4DAD2" }}>Other Technical Skills:</p>
+                    <span>
+                      <Pill pillData={otherSkills} />
+                    </span>
+                  </div>
+                  <div class="row mx-3 p-3">
+                    <p style={{ color: "#C4DAD2" }}>Certifications:</p>
+                    <span>
+                      <Pill pillData={certificates} />
+                    </span>
                   </div>
                 </div>
               </div>

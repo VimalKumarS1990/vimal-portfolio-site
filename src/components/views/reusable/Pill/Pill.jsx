@@ -13,8 +13,8 @@ const Pill = (props) => {
                 src={require(`../../../../assets/images/skills/${item.logo}.png`)}
                 alt={"img" + index}
                 style={{
-                  minWidth: "20px",
-                  height: "20px",
+                  minWidth: item.size || "20px",
+                  height: item.size || "20px",
                   marginRight: "6px",
                 }}
               />

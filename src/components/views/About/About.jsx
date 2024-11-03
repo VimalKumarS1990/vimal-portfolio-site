@@ -52,9 +52,10 @@ const About = ({ scrollToSection }) => {
                     textAlign: "center",
                     color: "white",
                     textShadow: "2px 2px 0px blue",
+                    paddingBottom: "2rem",
                   }}
                 >
-                  Web Developer
+                  Web Development
                 </h4>
                 <ul style={{ listStyleType: "circle" }}>
                   <li>
@@ -118,6 +119,7 @@ const About = ({ scrollToSection }) => {
                     textAlign: "center",
                     color: "white",
                     textShadow: "2px 2px 0px blue",
+                    paddingBottom: "1rem",
                   }}
                 >
                   A Bit About Me
@@ -148,6 +150,7 @@ const About = ({ scrollToSection }) => {
                       color: "white",
                       textShadow: "2px 2px 0px blue",
                       textAlign: "center",
+                      paddingBottom: "1rem",
                     }}
                   >
                     My Hobbies
