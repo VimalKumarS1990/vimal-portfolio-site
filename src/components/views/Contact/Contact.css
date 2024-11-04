@@ -1,7 +1,8 @@
 .url {
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
   color: rgb(205 216 229) !important;
-  cursor: pointer;
+  cursor: pointer !important;
+  margin-top: 4px !important;
 }
 .url:hover {
   color: yellowgreen !important;

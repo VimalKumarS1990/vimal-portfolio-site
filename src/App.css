@@ -281,7 +281,3 @@ section {
     color: #a965e9;
   }
 }
-
-.colorChgBlink {
-  animation: colorChange 15s infinite, blink 1s infinite;
-}

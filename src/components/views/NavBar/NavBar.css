@@ -14,12 +14,12 @@
   opacity: 0.9 !important;
 }
 .nav-item {
-  border-top: 1px solid !important;
+  border-top: 2px solid !important;
 }
 @media screen and (min-width: 1000px) {
   /* lg breakpoint */
   .navbar {
-    height: 50px !important;
+    height: 60px !important;
   }
   .nav-item {
     border-top: none !important;
@@ -36,9 +36,10 @@
   transition: font-size 0.3s ease;
   font-size: 1.1em;
 }
-svg:hover {
+.scroll-to-top svg:hover {
   color: yellow !important;
   text-shadow: 2px 2px 2px black !important;
+  background-color: #2c3e50 !important;
 }
 .navbar-light .navbar-toggler {
   border: none !important;

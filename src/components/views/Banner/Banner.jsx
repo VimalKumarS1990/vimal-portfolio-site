@@ -39,7 +39,7 @@ const Banner = () => {
           </span>
           <div className="row2">
             <p
-              className="row poppins-bold justify-content-center text-center colorChgBlink"
+              className="row poppins-bold justify-content-center text-center blinking-text"
               style={{ fontSize: "2em" }}
             >
               Welcome to my portfolio!
