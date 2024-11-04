@@ -239,13 +239,20 @@ body {
 .main-timeline .timeline:nth-child(5n + 5) .title {
   color: #0071bd;
 }
-
+.sec-child {
+  margin-left: -7em;
+  width: 100%;
+}
 @media screen and (max-width: 1200px) {
   .main-timeline .timeline:after {
     border-radius: 88px 0 0 88px;
   }
   .main-timeline .timeline:nth-child(even):after {
     border-radius: 0 88px 88px 0;
+  }
+  .sec-child {
+    margin-left: -7em;
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -282,6 +289,10 @@ body {
   .main-timeline .timeline-year {
     font-size: 40px;
   }
+  .sec-child {
+    margin-left: -7em;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 479px) {
   .main-timeline .timeline-icon {
@@ -312,15 +323,15 @@ body {
   .main-timeline .timeline:nth-child(even) .timeline-year {
     right: 9%;
   }
+  .sec-child {
+    margin-left: -7em;
+    width: 100%;
+  }
 }
 
 .comp-logo {
   width: 2em;
   height: 2em;
   background-color: white;
-  border-radius: 30px;
-}
-.sec-child {
-  margin-left: -10em;
-  width: 100%;
+  border-radius: 50px;
 }

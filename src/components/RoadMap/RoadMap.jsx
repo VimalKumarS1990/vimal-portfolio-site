@@ -9,14 +9,32 @@ import dell_logo from "../../assets/images/experience/dell_logo.png";
 const RoadMap = () => {
   return (
     <div className="container pt-4">
-      <h3 className="text-white pb-4">OverAll Experience - 14 Years</h3>
+      <h2
+        className="col-12 m-auto text-center"
+        style={{
+          textShadow: "2px 2px 2px black",
+          paddingBottom: "2rem",
+          color: "#C4DAD2",
+          textAlign: "center",
+        }}
+      >
+        <span>Overall Experience - 14 Years</span>
+        <ul style={{ textAlign: "left", fontSize: "0.7em" }}>
+          <li className="pt-4">IT Experience - 10 Years</li>
+          <li className="pt-4">Web Development Experience - 4 Years</li>
+        </ul>
+      </h2>
       <div className="row">
         <div className="col">
           <div className="main-timeline">
             <div className="timeline">
               <div className="timeline-content">
                 <span className="timeline-year">
-                  <img src={techm_logo} alt="dell-logo" className="comp-logo" />
+                  <img
+                    src={techm_logo}
+                    alt="dell-logo"
+                    className="comp-logo m-3"
+                  />
                 </span>
                 <div className="timeline-icon">
                   <i className="fa fa-rocket" aria-hidden="true"></i>
@@ -38,7 +56,7 @@ const RoadMap = () => {
                   <img
                     src={brainscale_logo}
                     alt="brainscale-logo"
-                    className="comp-logo"
+                    className="comp-logo m-3"
                   />
                 </span>
                 <div className="timeline-icon">
@@ -61,7 +79,7 @@ const RoadMap = () => {
                   <img
                     src={wns_logo}
                     alt="brainscale-logo"
-                    className="comp-logo"
+                    className="comp-logo m-3"
                   />
                 </span>
                 <div className="timeline-icon">
@@ -81,7 +99,11 @@ const RoadMap = () => {
             <div className="timeline">
               <div className="timeline-content sec-child">
                 <span className="timeline-year">
-                  <img src={relx_logo} alt="wns_logo" className="comp-logo" />
+                  <img
+                    src={relx_logo}
+                    alt="wns_logo"
+                    className="comp-logo m-3"
+                  />
                 </span>
                 <div className="timeline-icon">
                   <i className="fa fa-heart" aria-hidden="true"></i>
@@ -100,7 +122,11 @@ const RoadMap = () => {
             <div className="timeline">
               <div className="timeline-content">
                 <span className="timeline-year">
-                  <img src={dell_logo} alt="relx_logo" className="comp-logo" />
+                  <img
+                    src={dell_logo}
+                    alt="relx_logo"
+                    className="comp-logo m-3"
+                  />
                 </span>
                 <div className="timeline-icon">
                   <i className="fa fa-globe" aria-hidden="true"></i>
