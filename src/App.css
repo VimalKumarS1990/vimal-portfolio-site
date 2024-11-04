@@ -213,3 +213,75 @@ section {
   background: transparent !important;
   cursor: pointer !important;
 }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking-text {
+  text-align: center;
+  animation: blink 1s infinite;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave-animation 1s ease-in-out infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.colorChange {
+  animation: colorChange 5s infinite;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ff0000;
+  }
+  33% {
+    color: #1bb316;
+  }
+  66% {
+    color: #f3149d;
+  }
+  100% {
+    color: #a965e9;
+  }
+}
+
+.colorChgBlink {
+  animation: colorChange 15s infinite, blink 1s infinite;
+}

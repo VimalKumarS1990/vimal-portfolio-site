@@ -52,7 +52,7 @@ const About = ({ scrollToSection }) => {
                     textAlign: "center",
                     color: "white",
                     textShadow: "2px 2px 0px blue",
-                    paddingBottom: "2rem",
+                    paddingBottom: "1rem",
                   }}
                 >
                   Web Development
@@ -91,6 +91,7 @@ const About = ({ scrollToSection }) => {
                   maxWidth: "8rem",
                   margin: "auto",
                   borderRadius: "25px",
+                  marginTop: "1rem !important",
                 }}
                 onClick={() => scrollToSection("contact")}
               >

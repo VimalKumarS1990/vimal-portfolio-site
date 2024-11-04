@@ -18,7 +18,10 @@ const Banner = () => {
             style={{ color: "black" }}
           >
             Hi there!
-            <span style={{ fontSize: "0.45em", alignContent: "center" }}>
+            <span
+              style={{ fontSize: "0.45em", alignContent: "center" }}
+              className="wave"
+            >
               👋
             </span>
           </p>
@@ -36,7 +39,7 @@ const Banner = () => {
           </span>
           <div className="row2">
             <p
-              className="row poppins-bold justify-content-center text-center"
+              className="row poppins-bold justify-content-center text-center colorChgBlink"
               style={{ fontSize: "2em" }}
             >
               Welcome to my portfolio!

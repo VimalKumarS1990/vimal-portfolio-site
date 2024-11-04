@@ -22,7 +22,8 @@ function App() {
         smooth
         component={
           <FaChevronCircleUp
-            style={{ color: "yellowgreen", fontSize: "2em" }}
+            className="colorChange"
+            style={{ fontSize: "2em" }}
           />
         }
       />
