@@ -1,0 +1,27 @@
+.swiper {
+  width: 90%; /* Adjust width on mobile screens */
+  height: 350px; /* Adjust height further for mobile screens */
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(102, 96, 96);
+}
+
+/* .swiper-slide:nth-child(1n) {
+  background-color: black;
+} */
+
+/* Media query for screens larger than 1000px */
+@media screen and (min-width: 1000px) {
+  .swiper {
+    width: 480px; /* Fixed width on larger screens */
+    height: 300px; /* Fixed height on larger screens */
+  }
+}

@@ -8,6 +8,7 @@ import Contact from "./components/views/Contact/Contact";
 import ScrollToTop from "react-scroll-to-top";
 import { FaChevronCircleUp } from "react-icons/fa";
 import Experience from "./components/views/Experience/Experience";
+import Projects from "./components/views/Projects/Projects";
 
 function App() {
   const scrollToSection = (section) => {
@@ -33,6 +34,7 @@ function App() {
       <About scrollToSection={scrollToSection} />
       <Skills />
       <Experience />
+      <Projects />
       <Contact />
     </div>
   );

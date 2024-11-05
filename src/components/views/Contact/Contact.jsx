@@ -81,7 +81,7 @@ const Contact = () => {
           >
             CONTACT
           </h1>
-          <div className="row mt-3" style={{ justifyContent: "space-between" }}>
+          <div className="row mt-2" style={{ justifyContent: "space-between" }}>
             <div className="col-12 col-md-6 sec-2">
               <div
                 className="p-1 mt-4 card text-white glow"
