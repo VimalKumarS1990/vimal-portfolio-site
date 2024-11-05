@@ -90,7 +90,7 @@ const Contact = () => {
                 <div className="container m-auto">
                   <ul
                     className="text-white list-unstyled"
-                    style={{ margin: "2em" }}
+                    style={{ margin: "1em" }}
                   >
                     <li className="d-flex flex-wrap align-items-center">
                       <span>
