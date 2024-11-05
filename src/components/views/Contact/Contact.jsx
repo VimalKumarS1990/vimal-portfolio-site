@@ -82,94 +82,99 @@ const Contact = () => {
             CONTACT
           </h1>
           <div className="row mt-3" style={{ justifyContent: "space-between" }}>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 sec-2">
               <div
                 className="p-1 mt-4 card text-white glow"
                 style={{ height: "100%" }}
               >
-                <ul className="text-white list-unstyled m-auto">
-                  <li className="d-flex align-items-center">
-                    <span>
-                      <SiGmail
-                        style={{
-                          color: "red",
-                          backgroundColor: "white",
-                          borderRadius: "5px 0px",
-                          fontSize: "1.5em",
-                        }}
-                      />
-                    </span>
-                    <span className="m-2" style={{ fontSize: "1.2em" }}>
-                      Email:
-                    </span>
-                    <a
-                      href="mailto:svimalkumar2@gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="url p-1"
-                    >
-                      svimalkumar2@gmail.com
-                    </a>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <span>
-                      <BsLinkedin
-                        className="text-primary"
-                        style={{
-                          backgroundColor: "white",
-                          borderRadius: "5px 0px",
-                          fontSize: "1.5em",
-                        }}
-                      />
-                    </span>
-                    <span className="m-2" style={{ fontSize: "1.2em" }}>
-                      LinkedIn:
-                    </span>
-                    <a
-                      href="https://www.linkedin.com/messaging/compose/?recipientId=svimalkumar2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="url p-1"
-                    >
-                      svimalkumar2@gmail.com
-                    </a>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <span>
-                      <FaWhatsapp
-                        className="text-white bg-success rounded-circle"
-                        style={{
-                          backgroundColor: "white",
-                          borderRadius: "5px 0px",
-                          fontSize: "1.5em",
-                        }}
-                      />
-                    </span>
-                    <span className="m-2" style={{ fontSize: "1.2em" }}>
-                      WhatsApp:
-                    </span>
-                    <a
-                      href="https://wa.me/919791110494"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="url p-1"
-                    >
-                      +91 9791110494
-                    </a>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <span>
-                      <FaMobileAlt
-                        className="text-white"
-                        style={{ borderRadius: "5px 0px", fontSize: "1.5em" }}
-                      />
-                    </span>
-                    <span className="m-2" style={{ fontSize: "1.2em" }}>
-                      Mobile:
-                    </span>
-                    <h1 className="url p-1">+91 9791110494</h1>
-                  </li>
-                </ul>
+                <div className="container m-auto">
+                  <ul
+                    className="text-white list-unstyled"
+                    style={{ margin: "2em" }}
+                  >
+                    <li className="d-flex flex-wrap align-items-center">
+                      <span>
+                        <SiGmail
+                          style={{
+                            color: "red",
+                            backgroundColor: "white",
+                            borderRadius: "5px 0px",
+                            fontSize: "1.5em",
+                          }}
+                        />
+                      </span>
+                      <span className="m-2" style={{ fontSize: "1.2em" }}>
+                        Email:
+                      </span>
+                      <a
+                        href="mailto:svimalkumar2@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="url p-1"
+                      >
+                        svimalkumar2@gmail.com
+                      </a>
+                    </li>
+                    <li className="d-flex flex-wrap align-items-center">
+                      <span>
+                        <BsLinkedin
+                          className="text-primary"
+                          style={{
+                            backgroundColor: "white",
+                            borderRadius: "5px 0px",
+                            fontSize: "1.5em",
+                          }}
+                        />
+                      </span>
+                      <span className="m-2" style={{ fontSize: "1.2em" }}>
+                        LinkedIn:
+                      </span>
+                      <a
+                        href="https://www.linkedin.com/messaging/compose/?recipientId=svimalkumar2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="url p-1"
+                      >
+                        svimalkumar2@gmail.com
+                      </a>
+                    </li>
+                    <li className="d-flex flex-wrap align-items-center">
+                      <span>
+                        <FaWhatsapp
+                          className="text-white bg-success rounded-circle"
+                          style={{
+                            backgroundColor: "white",
+                            borderRadius: "5px 0px",
+                            fontSize: "1.5em",
+                          }}
+                        />
+                      </span>
+                      <span className="m-2" style={{ fontSize: "1.2em" }}>
+                        WhatsApp:
+                      </span>
+                      <a
+                        href="https://wa.me/919791110494"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="url p-1"
+                      >
+                        +91 9791110494
+                      </a>
+                    </li>
+                    <li className="d-flex flex-wrap align-items-center">
+                      <span>
+                        <FaMobileAlt
+                          className="text-white"
+                          style={{ borderRadius: "5px 0px", fontSize: "1.5em" }}
+                        />
+                      </span>
+                      <span className="m-2" style={{ fontSize: "1.2em" }}>
+                        Mobile:
+                      </span>
+                      <h1 className="url p-1">+91 9791110494</h1>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-12 col-md-6 sec-2">
