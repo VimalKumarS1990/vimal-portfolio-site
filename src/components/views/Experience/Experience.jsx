@@ -37,7 +37,7 @@ const Experience = () => {
               </h2>
               <div className="card glow">
                 <div className="card-body">
-                  <div class="row mx-3 p-3">
+                  <div className="row mx-3 p-3">
                     <ul className="text-light text-left list-unstyled">
                       <li className="pt-4">
                         <span>

@@ -82,86 +82,94 @@ const Contact = () => {
             CONTACT
           </h1>
           <div className="row mt-3" style={{ justifyContent: "space-between" }}>
-            <div className="col-12 col-md-6 sec-1">
+            <div className="col-12 col-md-6">
               <div
                 className="p-1 mt-4 card text-white glow"
                 style={{ height: "100%" }}
               >
-                <div
-                  className="contact-item"
-                  style={{ display: "flex", justifyContent: "left" }}
-                >
-                  <h3 style={{ fontSize: "1.5em" }}>
-                    <SiGmail
-                      style={{
-                        color: "red",
-                        backgroundColor: "white",
-                        borderRadius: "10px 0px",
-                      }}
-                    />{" "}
-                    Email: &nbsp;
-                  </h3>
-                  <a
-                    href="mailto:svimalkumar2@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h1 className="url">svimalkumar2@gmail.com</h1>
-                  </a>
-                </div>
-                <div
-                  className="contact-item"
-                  style={{ display: "flex", justifyContent: "left" }}
-                >
-                  <h3 style={{ fontSize: "1.5em" }}>
-                    <BsLinkedin
-                      className="text-primary"
-                      style={{
-                        backgroundColor: "white",
-                        borderRadius: "10px 0px",
-                      }}
-                    />{" "}
-                    LinkedIn: &nbsp;
-                  </h3>
-                  <a
-                    href="https://www.linkedin.com/messaging/compose/?recipientId=svimalkumar2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h1 className="url">svimalkumar2</h1>
-                  </a>
-                </div>
-                <div
-                  className="contact-item"
-                  style={{ display: "flex", justifyContent: "left" }}
-                >
-                  <h3 style={{ fontSize: "1.5em" }}>
-                    <FaWhatsapp
-                      className="text-white bg-success rounded-circle"
-                      style={{
-                        backgroundColor: "white",
-                        borderRadius: "10px 0px",
-                      }}
-                    />{" "}
-                    WhatsApp: &nbsp;
-                  </h3>
-                  <a
-                    href="https://wa.me/919791110494"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h1 className="url">+91 9791110494</h1>
-                  </a>
-                </div>
-                <div
-                  className="contact-item"
-                  style={{ display: "flex", justifyContent: "left" }}
-                >
-                  <h3 style={{ fontSize: "1.5em" }}>
-                    <FaMobileAlt className="text-white" /> Mobile: &nbsp;
-                  </h3>
-                  <h1 className="url">+91 9791110494</h1>
-                </div>
+                <ul className="text-white list-unstyled m-auto">
+                  <li className="d-flex align-items-center">
+                    <span>
+                      <SiGmail
+                        style={{
+                          color: "red",
+                          backgroundColor: "white",
+                          borderRadius: "5px 0px",
+                          fontSize: "1.5em",
+                        }}
+                      />
+                    </span>
+                    <span className="m-2" style={{ fontSize: "1.2em" }}>
+                      Email:
+                    </span>
+                    <a
+                      href="mailto:svimalkumar2@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="url p-1"
+                    >
+                      svimalkumar2@gmail.com
+                    </a>
+                  </li>
+                  <li className="d-flex align-items-center">
+                    <span>
+                      <BsLinkedin
+                        className="text-primary"
+                        style={{
+                          backgroundColor: "white",
+                          borderRadius: "5px 0px",
+                          fontSize: "1.5em",
+                        }}
+                      />
+                    </span>
+                    <span className="m-2" style={{ fontSize: "1.2em" }}>
+                      LinkedIn:
+                    </span>
+                    <a
+                      href="https://www.linkedin.com/messaging/compose/?recipientId=svimalkumar2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="url p-1"
+                    >
+                      svimalkumar2@gmail.com
+                    </a>
+                  </li>
+                  <li className="d-flex align-items-center">
+                    <span>
+                      <FaWhatsapp
+                        className="text-white bg-success rounded-circle"
+                        style={{
+                          backgroundColor: "white",
+                          borderRadius: "5px 0px",
+                          fontSize: "1.5em",
+                        }}
+                      />
+                    </span>
+                    <span className="m-2" style={{ fontSize: "1.2em" }}>
+                      WhatsApp:
+                    </span>
+                    <a
+                      href="https://wa.me/919791110494"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="url p-1"
+                    >
+                      +91 9791110494
+                    </a>
+                  </li>
+                  <li className="d-flex align-items-center">
+                    <span>
+                      <FaMobileAlt
+                        className="text-white"
+                        style={{ borderRadius: "5px 0px", fontSize: "1.5em" }}
+                      />
+                    </span>
+                    <span className="m-2" style={{ fontSize: "1.2em" }}>
+                      Mobile:
+                    </span>
+                    <h1 className="url p-1">+91 9791110494</h1>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="col-12 col-md-6 sec-2">
@@ -169,7 +177,7 @@ const Contact = () => {
                 className="p-1 mt-4 card text-white glow"
                 style={{ height: "100%" }}
               >
-                <form className="p-md-2 p-lg-3" id="resume">
+                <form className="p-md-2 p-lg-3 p-4" id="resume">
                   <div className="form-group">
                     <label htmlFor="name">
                       Name<span className="text-danger">*</span>
@@ -208,14 +216,16 @@ const Contact = () => {
                       onChange={(e) => setMessage(e.target.value)}
                     />
                   </div>
-                  <button
-                    type="submit"
-                    className="btn btn-primary"
-                    onClick={handleResumeDownload}
-                    style={{ borderRadius: "15px" }}
-                  >
-                    View / Download Resume
-                  </button>
+                  <div className="row justify-content-center pt-4">
+                    <button
+                      type="submit"
+                      className="btn btn-primary"
+                      onClick={handleResumeDownload}
+                      style={{ borderRadius: "15px" }}
+                    >
+                      View / Download Resume
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>

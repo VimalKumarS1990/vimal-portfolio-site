@@ -137,7 +137,7 @@ const About = ({ scrollToSection }) => {
                   fulfilling. When I’m not coding, I love to repair gadgets,
                   indulging my curiosity and technical skills.
                 </p>
-                <div class="row mx-3 p-3 justify-content-center">
+                <div className="row mx-3 p-3 justify-content-center">
                   <h4
                     style={{
                       color: "white",

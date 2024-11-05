@@ -134,7 +134,7 @@ const Skills = () => {
             <div className="col-12 col-md-6 text-white align-content-center">
               <div className="card glow">
                 <div className="card-body">
-                  <div class="row mx-3 p-3">
+                  <div className="row mx-3 p-3">
                     <Pill pillData={webSkills} />
                   </div>
                 </div>
@@ -160,13 +160,13 @@ const Skills = () => {
             <div className="col-12 col-md-6 text-white align-content-center">
               <div className="card glow">
                 <div className="card-body">
-                  <div class="row mx-3 p-3">
+                  <div className="row mx-3 p-3">
                     <p style={{ color: "#C4DAD2" }}>Other Technical Skills:</p>
                     <span>
                       <Pill pillData={otherSkills} />
                     </span>
                   </div>
-                  <div class="row mx-3 p-3">
+                  <div className="row mx-3 p-3">
                     <p style={{ color: "#C4DAD2" }}>Certifications:</p>
                     <span>
                       <Pill pillData={certificates} />

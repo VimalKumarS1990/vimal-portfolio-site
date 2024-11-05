@@ -2,7 +2,6 @@ import React from "react";
 import "./Pill.css";
 const Pill = (props) => {
   const { pillData } = props;
-  console.log(pillData);
   return (
     <>
       {pillData &&
