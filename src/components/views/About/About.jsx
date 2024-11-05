@@ -1,6 +1,7 @@
 import "./About.css";
 import myPic from "../../../assets/images/about-img.png";
 import Chip from "../reusable/Chip/Chip";
+import degree from "../../../assets/images/experience/degree.png";
 
 const About = ({ scrollToSection }) => {
   const hobbies = [
@@ -89,9 +90,8 @@ const About = ({ scrollToSection }) => {
                 className="btn btn-primary text-white>Download"
                 style={{
                   maxWidth: "8rem",
-                  margin: "auto",
                   borderRadius: "25px",
-                  marginTop: "1rem !important",
+                  margin: "2rem auto 2em",
                 }}
                 onClick={() => scrollToSection("contact")}
               >
@@ -137,8 +137,39 @@ const About = ({ scrollToSection }) => {
                   fulfilling. When I’m not coding, I love to repair gadgets,
                   indulging my curiosity and technical skills.
                 </p>
+                <div class="row mx-3 p-3 justify-content-center">
+                  <h4
+                    style={{
+                      color: "white",
+                      textShadow: "2px 2px 0px blue",
+                      textAlign: "center",
+                    }}
+                  >
+                    My Academics
+                  </h4>
+                  <ul
+                    className="text-light text-left listing list-unstyled"
+                    style={{ fontSize: "0.80em" }}
+                  >
+                    <li className="pt-4">
+                      <span>
+                        <img
+                          src={degree}
+                          alt="degree"
+                          style={{
+                            width: "35px",
+                            height: "30px",
+                            margin: "0px",
+                          }}
+                        />
+                      </span>
+                      Bachelor of Computer Application B.C.A with aggregate of
+                      78 % from IIETM, Chennai in the year 2010
+                    </li>
+                  </ul>
+                </div>
                 <div
-                  className="p-1 pt-5"
+                  className="p-1 pt-3"
                   style={{
                     borderRadius: "15px",
                     fontSize: "0.80em",
