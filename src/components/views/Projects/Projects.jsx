@@ -6,21 +6,25 @@ const projects = [
   {
     logo: "wbg",
     projName: "AIMM",
+    projectType: "Organization Project",
     description: "an app from the scratch which was build",
   },
   {
     logo: "wbg",
     projName: "AIMM",
+    projectType: "Freelancing Project",
     description: "an app from the scratch which was build",
   },
   {
     logo: "wbg",
     projName: "AIMM",
+    projectType: "Organization Project",
     description: "an app from the scratch which was build",
   },
   {
     logo: "wbg",
     projName: "AIMM",
+    projectType: "Freelancing Project",
     description: "an app from the scratch which was build",
   },
 ];
@@ -38,20 +42,9 @@ const Projects = () => {
           </h1>
           <div className="row mt-3" style={{ justifyContent: "space-between" }}>
             <div className="col-12 col-md-6 text-white align-content-center">
-              <img src={projPoster} alt="proj-poster" class="img-fluid " />
+              <img src={projPoster} alt="proj-poster" className="img-fluid " />
             </div>
             <div className="col-12 col-md-6 text-white align-content-center">
-              <h2
-                className="col-12 m-auto text-center"
-                style={{
-                  textShadow: "2px 2px 2px black",
-                  paddingBottom: "2rem",
-                  color: "#C4DAD2",
-                  textAlign: "center",
-                }}
-              >
-                The projects I have worked !
-              </h2>
               <SwiperCard cardData={projects} />
             </div>
           </div>
