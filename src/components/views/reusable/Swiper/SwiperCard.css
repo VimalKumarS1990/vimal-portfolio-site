@@ -1,6 +1,6 @@
 .swiper {
   width: 58%; /* Adjust width on mobile screens */
-  height: 750px; /* Adjust height further for mobile screens */
+  height: 780px; /* Adjust height further for mobile screens */
 }
 
 .swiper-slide {
@@ -34,7 +34,7 @@
 .description {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
-  font-size: 0.7em !important;
+  font-size: 0.6em !important;
   color: #f3f3e0 !important;
   line-height: 18px !important;
 }
@@ -52,11 +52,14 @@
   font-weight: normal !important;
   color: #f3f3e0 !important;
 }
+.fRow {
+  margin-top: 0px !important;
+}
 /* Media query for screens larger than 1000px */
 @media screen and (min-width: 1000px) {
   .swiper {
     width: 350px; /* Fixed width on larger screens */
-    height: 520px; /* Fixed height on larger screens */
+    height: 550px; /* Fixed height on larger screens */
   }
   .client-logo {
     background: #fff;

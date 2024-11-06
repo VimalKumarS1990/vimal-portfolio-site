@@ -19,7 +19,7 @@ const SwiperCard = (props) => {
       >
         {cardData.map((item, index) => (
           <SwiperSlide className="glow" key={index}>
-            <div className="row justify-content-center m-auto">
+            <div className="row justify-content-center m-auto fRow">
               <img
                 src={require(`../../../../assets/images/projects/${item.logo}.png`)}
                 alt={"index-" + item.logo}
