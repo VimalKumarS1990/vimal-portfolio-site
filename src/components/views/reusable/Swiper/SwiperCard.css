@@ -1,8 +1,14 @@
-.swiper {
-  width: 58%; /* Adjust width on mobile screens */
-  height: 780px; /* Adjust height further for mobile screens */
+.scroller {
+  overflow: auto !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch !important;
+  -ms-overflow-style: none !important;
 }
 
+.swiper {
+  width: 60%; /* Adjust width on mobile screens */
+  height: 500px; /* Adjust height further for mobile screens */
+}
 .swiper-slide {
   display: flex;
   align-items: center;
