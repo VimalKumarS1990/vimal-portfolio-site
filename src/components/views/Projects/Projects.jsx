@@ -120,6 +120,17 @@ const Projects = () => {
               />
             </div>
             <div className="col-12 col-md-6 text-white pt-3">
+              <h2
+                className="col-12 m-auto text-center"
+                style={{
+                  textShadow: "2px 2px 2px black",
+                  paddingBottom: "2rem",
+                  color: "#C4DAD2",
+                  textAlign: "center",
+                }}
+              >
+                Projects Worked
+              </h2>
               <SwiperCard cardData={projects} />
             </div>
           </div>
