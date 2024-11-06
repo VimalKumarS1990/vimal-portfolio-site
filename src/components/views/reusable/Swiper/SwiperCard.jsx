@@ -10,7 +10,7 @@ const SwiperCard = (props) => {
   const { cardData } = props;
 
   return (
-    <div>
+    <>
       <Swiper
         effect={"cards"}
         grabCursor={true}
@@ -19,19 +19,14 @@ const SwiperCard = (props) => {
       >
         {cardData.map((item, index) => (
           <SwiperSlide className="glow" key={index}>
-            <div classname="col-12 col-md-6 p-4">
-              <div className="row justify-content-center pt-5">
-                <img
-                  src={require(`../../../../assets/images/projects/${item.logo}.png`)}
-                  alt={"index-" + item.logo}
-                  className="img-fluid rounded client-logo mt-3"
-                />
-              </div>
-              <div className="row mx-5 mt-4">
-                <ul
-                  className="list-unstyled pb-5"
-                  style={{ lineHeight: "18px" }}
-                >
+            <div className="row justify-content-center m-auto">
+              <img
+                src={require(`../../../../assets/images/projects/${item.logo}.png`)}
+                alt={"index-" + item.logo}
+                className="img-fluid rounded client-logo mt-5 mb-3"
+              />
+              <div className="row mx-5 mt-1">
+                <ul className="list-unstyled" style={{ lineHeight: "18px" }}>
                   <li>
                     <p>
                       <span className="header-txt">Client Name: </span>
@@ -81,7 +76,7 @@ const SwiperCard = (props) => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </>
   );
 };
 
