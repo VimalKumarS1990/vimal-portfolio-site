@@ -22,12 +22,16 @@ function App() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
       easing: "ease-out", // Easing function for the animation
       once: false, // Whether the animation should happen only once when scrolling
       offset: 150, // The offset (in px) to trigger the animation
     });
+
+    AOS.refresh();
   }, []);
 
   return (
