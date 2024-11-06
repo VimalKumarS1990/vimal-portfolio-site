@@ -26,7 +26,7 @@ const RoadMap = () => {
             </a>
           </li>
           <li className="pt-4">
-            <a href="#web-exp" className="url">
+            <a href="#experience" className="url">
               Web Development Experience - 4 Years
             </a>
           </li>
@@ -34,7 +34,7 @@ const RoadMap = () => {
       </h2>
       <div className="row">
         <div className="col">
-          <div className="main-timeline" id="web-exp">
+          <div className="main-timeline">
             <div className="timeline">
               <div className="timeline-content">
                 <span className="timeline-year">

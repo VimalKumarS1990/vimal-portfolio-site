@@ -5,6 +5,7 @@
 }
 .url:hover {
   color: yellowgreen !important;
+  cursor: pointer;
 }
 a:hover {
   text-decoration: none;
