@@ -163,14 +163,23 @@ const Skills = () => {
               <div className="card glow">
                 <div className="card-body">
                   <div className="row mx-3">
-                    <p style={{ color: "#C4DAD2" }}>Other Technical Skills:</p>
+                    <p style={{ color: "#C4DAD2", fontWeight: "600" }}>
+                      Other Technical Skills:
+                    </p>
                     <span>
                       <Pill pillData={otherSkills} />
                     </span>
                   </div>
-                  <div className="row mx-3 ">
-                    <p style={{ color: "#C4DAD2" }}>Certifications:</p>
-                    <span>
+                  <div className="row mx-3">
+                    <p style={{ color: "#C4DAD2", fontWeight: "600" }}>
+                      Certifications:
+                    </p>
+                    <span
+                      style={{
+                        overflowX: "scroll",
+                        WebkitOverflowScrolling: "touch",
+                      }}
+                    >
                       <Pill pillData={certificates} />
                     </span>
                   </div>

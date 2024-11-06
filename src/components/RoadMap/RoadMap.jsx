@@ -20,13 +20,21 @@ const RoadMap = () => {
       >
         <span>Overall Experience - 14 Years</span>
         <ul style={{ textAlign: "left", fontSize: "0.7em" }}>
-          <li className="pt-4">IT Experience - 10 Years</li>
-          <li className="pt-4">Web Development Experience - 4 Years</li>
+          <li className="pt-4">
+            <a href="#it-exp" className="url">
+              IT Experience - 10 Years
+            </a>
+          </li>
+          <li className="pt-4">
+            <a href="#web-exp" className="url">
+              Web Development Experience - 4 Years
+            </a>
+          </li>
         </ul>
       </h2>
       <div className="row">
         <div className="col">
-          <div className="main-timeline">
+          <div className="main-timeline" id="web-exp">
             <div className="timeline">
               <div className="timeline-content">
                 <span className="timeline-year">
@@ -42,7 +50,7 @@ const RoadMap = () => {
                 <div className="content">
                   <h3 className="title">Tech Mahindra - Chennai</h3>
                   <h4 className="title text-warning">Sr.Software Engineer</h4>
-                  <h5 className="title text-dark">
+                  <h5 className="title" style={{ color: "#cfe1f1" }}>
                     From Oct 2021 to Present
                     <span className="online-status">
                       <div
@@ -73,7 +81,7 @@ const RoadMap = () => {
                 <div className="content">
                   <h3 className="title">Brain Scale Inc - Bangalore</h3>
                   <h4 className="title text-warning">Cloud Developer</h4>
-                  <h5 className="title text-dark">
+                  <h5 className="title" style={{ color: "#cfe1f1" }}>
                     From Mar 2021 to Oct 2021
                     <span className="online-status">
                       <div
@@ -89,7 +97,7 @@ const RoadMap = () => {
                 </div>
               </div>
             </div>
-            <div className="timeline">
+            <div className="timeline" id="it-exp">
               <div className="timeline-content">
                 <span className="timeline-year">
                   <img
@@ -106,7 +114,7 @@ const RoadMap = () => {
                   <h4 className="title text-warning">
                     Senior Software Analyst
                   </h4>
-                  <h5 className="title text-dark">
+                  <h5 className="title" style={{ color: "#cfe1f1" }}>
                     From Aug 2019 to Feb 2021
                     <span className="online-status">
                       <div
@@ -139,7 +147,7 @@ const RoadMap = () => {
                     Reed Elsevier India Pvt Ltd. (RELX) - Chennai
                   </h3>
                   <h4 className="title text-warning">Application Specialist</h4>
-                  <h5 className="title text-dark">
+                  <h5 className="title" style={{ color: "#cfe1f1" }}>
                     From Aug 2014 to May 2019
                     <span className="online-status">
                       <div
@@ -174,7 +182,7 @@ const RoadMap = () => {
                   <h4 className="title text-warning">
                     HC & Ins. Ops Senior. Rep
                   </h4>
-                  <h5 className="title text-dark">
+                  <h5 className="title" style={{ color: "#cfe1f1" }}>
                     From May 2010 to Apr 2014
                     <span className="online-status">
                       <div

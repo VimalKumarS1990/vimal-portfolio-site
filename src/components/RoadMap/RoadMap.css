@@ -93,7 +93,7 @@
 
 .main-timeline .title {
   color: #65c7d0;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 0 5px 0;
@@ -232,7 +232,7 @@
 }
 
 .main-timeline .timeline:nth-child(5n + 5) .title {
-  color: #424769;
+  color: #a2a7ef;
 }
 .sec-child {
   margin-left: -7em;
@@ -259,6 +259,7 @@
   animation: blink 1s infinite; /* Blink every 1 second */
   display: inline-block;
   margin-left: 8px; /* Space between text and dot */
+  border: 1px solid black;
 }
 .online-dot-noBlink {
   width: 12px;
@@ -266,6 +267,7 @@
   border-radius: 50%;
   display: inline-block;
   margin-left: 8px; /* Space between text and dot */
+  border: 1px solid;
 }
 .online-status {
   display: inline-flex;
