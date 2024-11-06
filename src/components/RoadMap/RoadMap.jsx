@@ -10,6 +10,8 @@ const RoadMap = () => {
   return (
     <div className="container pt-4">
       <h2
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
         className="col-12 m-auto text-center"
         style={{
           textShadow: "2px 2px 2px black",
@@ -32,7 +34,12 @@ const RoadMap = () => {
           </li>
         </ul>
       </h2>
-      <div className="row">
+      <div
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="1200"
+        className="row"
+      >
         <div className="col">
           <div className="main-timeline">
             <div className="timeline">

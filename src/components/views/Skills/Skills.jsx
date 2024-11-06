@@ -116,6 +116,8 @@ const Skills = () => {
       <div className="row">
         <div className="col m-auto">
           <h1
+            data-aos="fade-down"
+            data-aos-easing="linear"
             className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold"
             style={{ textShadow: "5px 3px 2px black", color: "white" }}
           >
@@ -123,6 +125,8 @@ const Skills = () => {
           </h1>
           <div className="row mt-3" style={{ justifyContent: "space-between" }}>
             <h2
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
               className="col-12 m-auto text-center"
               style={{
                 textShadow: "2px 2px 2px black",
@@ -133,7 +137,10 @@ const Skills = () => {
             >
               Web Development Skills
             </h2>
-            <div className="col-12 col-md-6 text-white align-content-center">
+            <div
+              data-aos="zoom-in-down"
+              className="col-12 col-md-6 text-white align-content-center"
+            >
               <div className="card glow">
                 <div className="card-body">
                   <div className="row mx-3 ">
@@ -142,10 +149,12 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6">
+            <div data-aos="zoom-in-up" className="col-12 col-md-6">
               <img src={posterWeb} alt="skills-web" className="img-fluid" />
             </div>
             <h2
+              data-aos="zoom-in-up"
+              data-aos-anchor-placement="top-bottom"
               className="col-12 m-auto text-center"
               style={{
                 textShadow: "2px 2px 2px black",
@@ -156,10 +165,13 @@ const Skills = () => {
             >
               Other Technical Skills & Certifications
             </h2>
-            <div className="col-12 col-md-6">
+            <div data-aos="zoom-in-down" className="col-12 col-md-6">
               <img src={posterOther} alt="skills-other" className="img-fluid" />
             </div>
-            <div className="col-12 col-md-6 text-white align-content-center">
+            <div
+              data-aos="zoom-in-left"
+              className="col-12 col-md-6 text-white align-content-center"
+            >
               <div className="card glow">
                 <div className="card-body">
                   <div className="row mx-3">

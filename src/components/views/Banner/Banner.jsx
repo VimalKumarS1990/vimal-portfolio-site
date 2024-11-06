@@ -6,14 +6,21 @@ import { TypeAnimation } from "react-type-animation";
 const Banner = () => {
   return (
     <section
+      data-aos="flip-up"
+      data-aos-duration="1500"
       className="container card py-5 bg-light"
       id="home"
       style={{ border: "10px solid rgb(181 231 120 / 54%)" }}
     >
       <div className="row"></div>
-      <div className="row p-3 align-content-center justify-content-center">
+      <div
+        data-aos="fade-up"
+        className="row p-3 align-content-center justify-content-center"
+      >
         <div className="col-12 col-md-6 text-left align-content-center">
           <p
+            data-aos="zoom-in"
+            data-aos-duration="2000"
             className="display-3 row fw-bold poppins-semibold fs-20-lg justify-content-center text-center"
             style={{ color: "black" }}
           >
@@ -31,6 +38,8 @@ const Banner = () => {
               I'm &nbsp;
             </p>
             <h1
+              data-aos="zoom-in"
+              data-aos-duration="3000"
               className="display-3 poppins-extrabold"
               style={{ color: "maroon" }}
             >
@@ -81,6 +90,8 @@ const Banner = () => {
         </div>
         <div className="col-12 col-md-6 text-center">
           <img
+            data-aos="fade-up"
+            data-aos-duration="3000"
             src={bannerImg1}
             alt="banner-img"
             className="banner-img img-fluid"

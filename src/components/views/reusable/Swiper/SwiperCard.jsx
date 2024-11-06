@@ -12,6 +12,7 @@ const SwiperCard = (props) => {
   return (
     <>
       <Swiper
+        data-aos="flip-left"
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}

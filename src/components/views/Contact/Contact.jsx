@@ -76,12 +76,18 @@ const Contact = () => {
       <div className="row">
         <div className="col m-auto">
           <h1
+            data-aos="fade-down"
+            data-aos-easing="linear"
             className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold"
             style={{ textShadow: "5px 3px 2px black", color: "white" }}
           >
             CONTACT
           </h1>
-          <div className="row mt-2" style={{ justifyContent: "space-between" }}>
+          <div
+            data-aos="flip-left"
+            className="row mt-2"
+            style={{ justifyContent: "space-between" }}
+          >
             <div className="col-12 col-md-6 sec-2">
               <div
                 className="p-1 mt-4 card text-white glow"
@@ -177,7 +183,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 sec-2">
+            <div data-aos="flip-right" className="col-12 col-md-6 sec-2">
               <div
                 className="p-1 mt-4 card text-white glow"
                 style={{ height: "100%" }}

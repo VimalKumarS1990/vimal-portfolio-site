@@ -9,6 +9,8 @@ const Experience = () => {
       <div className="row">
         <div className="col m-auto">
           <h1
+            data-aos="fade-down"
+            data-aos-easing="linear"
             className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold"
             style={{ textShadow: "5px 3px 2px black", color: "white" }}
           >
@@ -20,11 +22,14 @@ const Experience = () => {
             </div>
             <div className="col-12 col-md-6 text-center">
               <img
+                data-aos="zoom-in"
                 src={posterExp}
                 alt="exp-poster"
                 className="img-fluid pt-5 mt-5"
               />
               <h2
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 className="col-12 m-auto text-center"
                 style={{
                   textShadow: "2px 2px 2px black",
@@ -35,7 +40,7 @@ const Experience = () => {
               >
                 Awards & Recognitions
               </h2>
-              <div className="card glow">
+              <div data-aos="flip-right" className="card glow">
                 <div className="card-body">
                   <div className="row mx-3 p-3">
                     <ul className="text-light text-left list-unstyled">

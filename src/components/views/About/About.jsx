@@ -16,12 +16,16 @@ const About = ({ scrollToSection }) => {
       <div className="row">
         <div className="col m-auto">
           <h1
+            data-aos="fade-down"
+            data-aos-easing="linear"
             className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold"
             style={{ textShadow: "5px 3px 2px black", color: "white" }}
           >
             ABOUT
           </h1>
           <h2
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
             className="row m-auto justify-content-center pt-4 abt-header"
             style={{
               textShadow: "2px 2px 2px black",
@@ -38,6 +42,7 @@ const About = ({ scrollToSection }) => {
             style={{ borderRadius: "15px" }}
           >
             <div
+              data-aos="zoom-in-right"
               className="col-12 col-md-4 sec-1 text-white bg-secondary card glowBlack mb-2 py-4"
               style={{ borderRadius: "15px", border: "2px solid yellowgreen" }}
             >
@@ -101,6 +106,7 @@ const About = ({ scrollToSection }) => {
 
             <div className="col-12 col-md-4 sec-2 mb-2 py-2">
               <img
+                data-aos="zoom-out"
                 src={myPic}
                 alt="myPic-aboutme"
                 className="img-fluid about-img"
@@ -108,6 +114,7 @@ const About = ({ scrollToSection }) => {
             </div>
 
             <div
+              data-aos="zoom-in-left"
               className="col-12 col-md-4 sec-3 text-white bg-secondary card glowBlack mb-2 py-4"
               style={{
                 borderRadius: "15px",

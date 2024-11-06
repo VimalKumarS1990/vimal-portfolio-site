@@ -106,6 +106,8 @@ const Projects = () => {
       <div className="row">
         <div className="col m-auto">
           <h1
+            data-aos="fade-down"
+            data-aos-easing="linear"
             className="header row m-auto align-items-center justify-content-center display-4 poppins-semibold"
             style={{ textShadow: "5px 3px 2px black", color: "white" }}
           >
@@ -114,6 +116,7 @@ const Projects = () => {
           <div className="row mt-3" style={{ justifyContent: "space-between" }}>
             <div className="col-12 col-md-6 text-white">
               <img
+                data-aos="fade-right"
                 src={projPoster}
                 alt="proj-poster"
                 className="img-fluid pt-5"
@@ -121,6 +124,8 @@ const Projects = () => {
             </div>
             <div className="col-12 col-md-6 text-white pt-3">
               <h2
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 className="col-12 m-auto text-center"
                 style={{
                   textShadow: "2px 2px 2px black",
