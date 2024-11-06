@@ -15,6 +15,7 @@ const Pill = (props) => {
                   minWidth: item.size || "20px",
                   height: item.size || "20px",
                   marginRight: "6px",
+                  marginLeft: item.left,
                 }}
               />
             </span>

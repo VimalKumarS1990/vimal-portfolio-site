@@ -1,5 +1,5 @@
 .swiper {
-  width: 75%; /* Adjust width on mobile screens */
+  width: 70%; /* Adjust width on mobile screens */
   height: 350px; /* Adjust height further for mobile screens */
 }
 
@@ -21,7 +21,7 @@
 /* Media query for screens larger than 1000px */
 @media screen and (min-width: 1000px) {
   .swiper {
-    width: 480px; /* Fixed width on larger screens */
+    width: 350px; /* Fixed width on larger screens */
     height: 300px; /* Fixed height on larger screens */
   }
 }

@@ -156,23 +156,23 @@
 }
 
 .main-timeline .timeline:nth-child(5n + 2)::before {
-  border-color: #ea3c14;
+  border-color: #d7e703;
 }
 
 .main-timeline .timeline:nth-child(5n + 2)::after {
-  border-color: #ef5720;
+  border-color: hsl(64deg 78.17% 61% / 92%);
 }
 
 .main-timeline .timeline:nth-child(5n + 2) .timeline-icon {
-  color: #ea3c14;
+  color: #d7e703;
 }
 
 .main-timeline .timeline:nth-child(5n + 2) .timeline-year {
-  color: #ea3c14;
+  color: #d7e703;
 }
 
 .main-timeline .timeline:nth-child(5n + 2) .title {
-  color: #ea3c14;
+  color: #d7e703;
 }
 
 .main-timeline .timeline:nth-child(5n + 3)::before {
@@ -232,11 +232,44 @@
 }
 
 .main-timeline .timeline:nth-child(5n + 5) .title {
-  color: #0071bd;
+  color: #424769;
 }
 .sec-child {
   margin-left: -7em;
   width: 100%;
+}
+/* Create the blinking effect */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Style for the online dot */
+.online-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: blink 1s infinite; /* Blink every 1 second */
+  display: inline-block;
+  margin-left: 8px; /* Space between text and dot */
+}
+.online-dot-noBlink {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 8px; /* Space between text and dot */
+}
+.online-status {
+  display: inline-flex;
+  align-items: center;
 }
 @media screen and (max-width: 1200px) {
   .main-timeline .timeline:after {

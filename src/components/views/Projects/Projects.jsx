@@ -41,10 +41,10 @@ const Projects = () => {
             PROJECTS
           </h1>
           <div className="row mt-3" style={{ justifyContent: "space-between" }}>
-            <div className="col-12 col-md-6 text-white align-content-center">
+            <div className="col-12 col-md-6 text-white">
               <img src={projPoster} alt="proj-poster" className="img-fluid " />
             </div>
-            <div className="col-12 col-md-6 text-white align-content-center">
+            <div className="col-12 col-md-6 text-white pt-3">
               <SwiperCard cardData={projects} />
             </div>
           </div>

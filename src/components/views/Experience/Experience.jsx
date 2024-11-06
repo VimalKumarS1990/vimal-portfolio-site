@@ -55,8 +55,10 @@ const Experience = () => {
                         times from 2016 to 2018 in the categories “Focus on
                         Efficiency” and “Think Technology” for three different
                         automation projects which reduces manual work and saves
-                        time to a large extent in Reed Elsevier India Pvt Ltd
-                        (RELX).
+                        time to a large extent in{" "}
+                        <span style={{ color: "yellow" }}>
+                          Reed Elsevier India Pvt Ltd (RELX).
+                        </span>
                       </li>
                       <li className="pt-4">
                         <span>
@@ -71,7 +73,10 @@ const Experience = () => {
                           />
                         </span>
                         Received Best Performer award in Production & Quality in
-                        2013 in Dell International Services.
+                        2013 in{" "}
+                        <span style={{ color: "yellow" }}>
+                          Dell International Services.
+                        </span>
                       </li>
                     </ul>
                   </div>

@@ -102,11 +102,13 @@ const Skills = () => {
       name: "Microsoft Azure AZ900 - Certified ",
       logo: "az900_logo",
       size: "30px",
+      left: "10px",
     },
     {
       name: "BluePrism Developer - Certified ",
       logo: "rpa_logo",
       size: "30px",
+      left: "10px",
     },
   ];
   return (
@@ -134,7 +136,7 @@ const Skills = () => {
             <div className="col-12 col-md-6 text-white align-content-center">
               <div className="card glow">
                 <div className="card-body">
-                  <div className="row mx-3 p-3">
+                  <div className="row mx-3 ">
                     <Pill pillData={webSkills} />
                   </div>
                 </div>
@@ -160,13 +162,13 @@ const Skills = () => {
             <div className="col-12 col-md-6 text-white align-content-center">
               <div className="card glow">
                 <div className="card-body">
-                  <div className="row mx-3 p-3">
+                  <div className="row mx-3">
                     <p style={{ color: "#C4DAD2" }}>Other Technical Skills:</p>
                     <span>
                       <Pill pillData={otherSkills} />
                     </span>
                   </div>
-                  <div className="row mx-3 p-3">
+                  <div className="row mx-3 ">
                     <p style={{ color: "#C4DAD2" }}>Certifications:</p>
                     <span>
                       <Pill pillData={certificates} />
