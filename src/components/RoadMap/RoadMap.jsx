@@ -48,9 +48,22 @@ const RoadMap = () => {
                   <i className="fa fa-rocket" aria-hidden="true"></i>
                 </div>
                 <div className="content">
-                  <h3 className="title">Tech Mahindra - Chennai</h3>
-                  <h4 className="title text-warning">Sr.Software Engineer</h4>
-                  <h5 className="title" style={{ color: "#cfe1f1" }}>
+                  <h3
+                    className="title"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
+                    Tech Mahindra - Chennai
+                  </h3>
+                  <h4
+                    className="title text-warning"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
+                    Sr.Software Engineer
+                  </h4>
+                  <h5
+                    className="title"
+                    style={{ color: "black", textShadow: "1px 0px 2px white" }}
+                  >
                     From Oct 2021 to Present
                     <span className="online-status">
                       <div
@@ -79,9 +92,25 @@ const RoadMap = () => {
                   <i className="fa fa-users" aria-hidden="true"></i>
                 </div>
                 <div className="content">
-                  <h3 className="title">Brain Scale Inc - Bangalore</h3>
-                  <h4 className="title text-warning">Cloud Developer</h4>
-                  <h5 className="title" style={{ color: "#cfe1f1" }}>
+                  <h3
+                    className="title"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
+                    Brain Scale Inc - Bangalore
+                  </h3>
+                  <h4
+                    className="title text-warning"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
+                    Cloud Developer
+                  </h4>
+                  <h5
+                    className="title"
+                    style={{
+                      color: "black",
+                      textShadow: "1px 0px 2px white",
+                    }}
+                  >
                     From Mar 2021 to Oct 2021
                     <span className="online-status">
                       <div
@@ -110,11 +139,25 @@ const RoadMap = () => {
                   <i className="fa fa-cog" aria-hidden="true"></i>
                 </div>
                 <div className="content">
-                  <h3 className="title">WNS Global Services - Bangalore</h3>
-                  <h4 className="title text-warning">
+                  <h3
+                    className="title"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
+                    WNS Global Services - Bangalore
+                  </h3>
+                  <h4
+                    className="title text-warning"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
                     Senior Software Analyst
                   </h4>
-                  <h5 className="title" style={{ color: "#cfe1f1" }}>
+                  <h5
+                    className="title"
+                    style={{
+                      color: "black",
+                      textShadow: "1px 0px 2px white",
+                    }}
+                  >
                     From Aug 2019 to Feb 2021
                     <span className="online-status">
                       <div
@@ -143,11 +186,25 @@ const RoadMap = () => {
                   <i className="fa fa-heart" aria-hidden="true"></i>
                 </div>
                 <div className="content">
-                  <h3 className="title">
+                  <h3
+                    className="title"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
                     Reed Elsevier India Pvt Ltd. (RELX) - Chennai
                   </h3>
-                  <h4 className="title text-warning">Application Specialist</h4>
-                  <h5 className="title" style={{ color: "#cfe1f1" }}>
+                  <h4
+                    className="title text-warning"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
+                    Application Specialist
+                  </h4>
+                  <h5
+                    className="title"
+                    style={{
+                      color: "black",
+                      textShadow: "1px 0px 2px white",
+                    }}
+                  >
                     From Aug 2014 to May 2019
                     <span className="online-status">
                       <div
@@ -176,13 +233,25 @@ const RoadMap = () => {
                   <i className="fa fa-globe" aria-hidden="true"></i>
                 </div>
                 <div className="content">
-                  <h3 className="title">
+                  <h3
+                    className="title"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
                     Dell International Services - Chennai
                   </h3>
-                  <h4 className="title text-warning">
+                  <h4
+                    className="title text-warning"
+                    style={{ textShadow: "1px 0px 2px black" }}
+                  >
                     HC & Ins. Ops Senior. Rep
                   </h4>
-                  <h5 className="title" style={{ color: "#cfe1f1" }}>
+                  <h5
+                    className="title"
+                    style={{
+                      color: "black",
+                      textShadow: "1px 0px 2px white",
+                    }}
+                  >
                     From May 2010 to Apr 2014
                     <span className="online-status">
                       <div

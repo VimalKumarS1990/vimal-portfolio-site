@@ -6,9 +6,9 @@ import { TypeAnimation } from "react-type-animation";
 const Banner = () => {
   return (
     <section
-      className="container card py-5"
+      className="container card py-5 bg-light"
       id="home"
-      style={{ backgroundColor: "#F1EFDC" }}
+      style={{ border: "10px solid rgb(181 231 120 / 54%)" }}
     >
       <div className="row"></div>
       <div className="row p-3 align-content-center justify-content-center">
@@ -39,7 +39,7 @@ const Banner = () => {
           </span>
           <div className="row2">
             <p
-              className="row poppins-bold justify-content-center text-center blinking-text"
+              className="row poppins-bold justify-content-center text-center colorBlink"
               style={{ fontSize: "2em" }}
             >
               Welcome to my portfolio!

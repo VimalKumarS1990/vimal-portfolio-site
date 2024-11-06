@@ -1,6 +1,6 @@
 .swiper {
   width: 70%; /* Adjust width on mobile screens */
-  height: 350px; /* Adjust height further for mobile screens */
+  height: 520px; /* Adjust height further for mobile screens */
 }
 
 .swiper-slide {
@@ -8,9 +8,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
   background-color: rgb(102, 96, 96);
 }
 
@@ -18,10 +15,65 @@
   background-color: black;
 } */
 
+.client-logo {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px !important;
+}
+.card-area {
+  margin: auto;
+  padding: 10px;
+}
+.header-txt {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 0.8em !important;
+  font-weight: bold !important;
+  color: orange !important;
+}
+.description {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  font-size: 0.7em !important;
+  color: #f3f3e0 !important;
+  line-height: 18px !important;
+}
+.card-txt {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  font-size: 0.8em !important;
+  font-weight: normal !important;
+  color: #f3f3e0 !important;
+}
+.loc-txt {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  font-size: 0.6em !important;
+  font-weight: normal !important;
+  color: #f3f3e0 !important;
+}
 /* Media query for screens larger than 1000px */
 @media screen and (min-width: 1000px) {
   .swiper {
     width: 350px; /* Fixed width on larger screens */
-    height: 300px; /* Fixed height on larger screens */
+    height: 520px; /* Fixed height on larger screens */
+  }
+  .client-logo {
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px !important;
+  }
+  .header-txt {
+    font-size: 1em !important;
+  }
+  .description {
+    font-size: 0.8em !important;
+  }
+  .card-txt {
+    font-size: 1em !important;
+  }
+  .loc-txt {
+    font-size: 0.8em !important;
   }
 }
