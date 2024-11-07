@@ -110,6 +110,12 @@ const Skills = () => {
       size: "30px",
       left: "10px",
     },
+    {
+      name: "Hardware & Networking - Certified ",
+      logo: "hardNet_logo",
+      size: "30px",
+      left: "10px",
+    },
   ];
   return (
     <section className="container-fluid col py-5" id="skills">
