@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   const submitFormData = async () => {
-    const resumePath = `https://drive.google.com/file/d/1Jzdk1mgM0IGdLkJNvQUEDanCzBJxnK7r/view?usp=sharing`;
+    const resumePath = `https://drive.google.com/file/d/106TXQJ6HNaLTps6yX9LGjuRBpp0FP8xS/view?usp=sharing`;
     const currentDateTime = new Date().toLocaleString();
 
     const userData = {
