@@ -12,6 +12,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
+  const [isLoading, setLoading] = useState(false);
 
   const setDefault = () => {
     setName("");
@@ -24,21 +25,23 @@ const Contact = () => {
     const currentDateTime = new Date().toLocaleString();
 
     const userData = {
-      Name: name,
-      Mobile: mobile,
-      Message: message,
-      Downloaded_Date_Time: currentDateTime,
+      name: name,
+      mobile: mobile,
+      message: message,
+      dateTime: currentDateTime,
     };
 
     try {
+      setLoading(true);
       const response = await axios.post(
-        "https://api.sheetbest.com/sheets/2a377bb6-f892-4051-aff9-2a0a7b2866c0",
+        "https://vimal-portfolio-backend.onrender.com/api/download",
         userData
       );
       response.data &&
         toast.success("Thanks for Downloading!", {
           position: "bottom-right",
         });
+      setLoading(false);
       window.open(resumePath, "_blank");
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -228,14 +231,24 @@ const Contact = () => {
                     />
                   </div>
                   <div className="row justify-content-center pt-4">
-                    <button
-                      type="submit"
-                      className="btn btn-primary"
-                      onClick={handleResumeDownload}
-                      style={{ borderRadius: "15px" }}
-                    >
-                      View / Download Resume
-                    </button>
+                    {isLoading ? (
+                      <div className="d-flex">
+                        <div className="p-1">Please wait...</div>
+                        <div
+                          className="spinner-grow text-warning"
+                          role="status"
+                        ></div>
+                      </div>
+                    ) : (
+                      <button
+                        type="submit"
+                        className="btn btn-primary"
+                        onClick={handleResumeDownload}
+                        style={{ borderRadius: "15px" }}
+                      >
+                        View / Download Resume
+                      </button>
+                    )}
                   </div>
                 </form>
               </div>
