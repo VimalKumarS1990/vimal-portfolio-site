@@ -20,16 +20,16 @@ const RoadMap = () => {
           textAlign: "center",
         }}
       >
-        <span>Overall Experience - 14 Years</span>
+        <span>Overall Experience - 15 Years</span>
         <ul style={{ textAlign: "left", fontSize: "0.7em" }}>
           <li className="pt-4">
             <a href="#it-exp" className="url">
-              IT Experience - 10 Years
+              IT Experience - 11 Years
             </a>
           </li>
           <li className="pt-4">
             <a href="#experience" className="url">
-              Web Development Experience - 4 Years
+              Web Development Experience - 4+ Years
             </a>
           </li>
         </ul>

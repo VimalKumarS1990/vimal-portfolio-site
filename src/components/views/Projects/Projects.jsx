@@ -3,6 +3,37 @@ import projPoster from "../../../assets/images/projects/projectPoster.png";
 import SwiperCard from "../reusable/Swiper/SwiperCard";
 const projects = [
   {
+    logo: "enbridge_logo",
+    clientName: "Enbridge Inc",
+    location: " - (Canada)",
+    projectName: "Windturbine Troubleshooter App - (Gen Ai)",
+    role: "Frontend Developer & UI Lead",
+    techUsed: [
+      {
+        name: "React ",
+        logo: "react_logo",
+      },
+      {
+        name: "Bootstrap ",
+        logo: "bootstrap_logo",
+      },
+      {
+        name: "Gen Ai ",
+        logo: "gen_ai_logo",
+      },
+      {
+        name: "Node JS ",
+        logo: "nodejs_logo",
+      },
+      {
+        name: "Git Hub ",
+        logo: "github_logo",
+      },
+    ],
+    description:
+      "Built a GenAI-powered Chat app for Enbridge Wind Turbine techs to get solutions with steps, images & citations.",
+  },
+  {
     logo: "bnsf_logo",
     clientName: "BNSF Railway",
     location: " - (Texas)",
