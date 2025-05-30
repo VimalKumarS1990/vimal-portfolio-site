@@ -240,14 +240,29 @@ const Contact = () => {
                         ></div>
                       </div>
                     ) : (
-                      <button
-                        type="submit"
-                        className="btn btn-primary"
-                        onClick={handleResumeDownload}
-                        style={{ borderRadius: "15px" }}
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          textAlign: "center",
+                        }}
                       >
-                        View / Download Resume
-                      </button>
+                        <button
+                          type="submit"
+                          className="btn btn-primary"
+                          onClick={handleResumeDownload}
+                          style={{ borderRadius: "15px" }}
+                        >
+                          View / Download Resume
+                        </button>
+                        <small
+                          className="mt-3"
+                          style={{ color: "white", fontSize: "11px" }}
+                        >
+                          Resume Last Updated On:{" "}
+                          <span style={{ color: "aqua" }}>Nov 2024</span>
+                        </small>
+                      </div>
                     )}
                   </div>
                 </form>
