@@ -26,19 +26,26 @@ const Admin = () => {
         className="mb-4"
         style={{ display: "flex", justifyContent: "space-between" }}
       >
-        <h2 className="text-white">
+        <h2
+          className="text-white responsive-header"
+          style={{ fontWeight: "bold" }}
+        >
           Details of Users who Downloaded My Resume
         </h2>
         <button
           className="btn btn-warning backBtn"
           onClick={handleGoHome}
-          style={{ borderRadius: "15px" }}
+          style={{
+            borderRadius: "15px",
+            maxHeight: "35px",
+            fontWeight: "bold",
+          }}
         >
-          Back to Home
+          Back
         </button>
       </div>
       <div className="table-responsive">
-        <table className="table table-striped table-bordered bg-white">
+        <table className="table table-striped table-bordered bg-white responsive-font">
           <thead className="table-dark">
             <tr>
               <th>Name</th>
@@ -48,14 +55,26 @@ const Admin = () => {
             </tr>
           </thead>
           <tbody>
-            {messages.map((msg) => (
-              <tr key={msg._id}>
-                <td>{msg.name}</td>
-                <td>{msg.mobile}</td>
-                <td>{msg.message || "-"}</td>
-                <td>{msg.dateTime}</td>
+            {messages.length > 0 ? (
+              messages.map((msg) => (
+                <tr key={msg._id}>
+                  <td>{msg.name}</td>
+                  <td>{msg.mobile}</td>
+                  <td>{msg.message || "-"}</td>
+                  <td>{msg.dateTime}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td
+                  colSpan="4"
+                  className="text-center"
+                  style={{ fontWeight: "bold" }}
+                >
+                  Sorry! No one downloaded yet!
+                </td>
               </tr>
-            ))}
+            )}
           </tbody>
         </table>
       </div>
