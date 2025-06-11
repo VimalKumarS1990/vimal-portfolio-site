@@ -21,7 +21,7 @@ const Contact = () => {
   };
 
   const submitFormData = async () => {
-    const resumePath = `https://drive.google.com/file/d/106TXQJ6HNaLTps6yX9LGjuRBpp0FP8xS/view?usp=sharing`;
+    const resumePath = `https://drive.google.com/file/d/14VxSkvhy6foHxFbJLSB0kAEkbaEgf1ed/view?usp=sharing`;
     const currentDateTime = new Date().toLocaleString();
 
     const userData = {
@@ -260,7 +260,7 @@ const Contact = () => {
                           style={{ color: "white", fontSize: "11px" }}
                         >
                           Resume Last Updated On:{" "}
-                          <span style={{ color: "aqua" }}>Nov 2024</span>
+                          <span style={{ color: "aqua" }}>June 2025</span>
                         </small>
                       </div>
                     )}
